@@ -1,0 +1,69 @@
+[{"stream_name":"stdout","time":25.714847349,"data":"device: cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":25.715000187,"data":"config: {'size': 256, 'folds_run': 5, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'merit', 'backbone': 'convnext_tiny', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'edl', 'loss': 'cbedl', 'beta_eff': 0.999, 'lam_max': 1.0, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': True, 'save_ckpt': True, 'max_epsamples': 0, 'tag': 'main'}\n"}
+,{"stream_name":"stdout","time":25.729050793,"data":"cache files: ['ham_256.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_labels.csv']\n"}
+,{"stream_name":"stdout","time":26.377761754,"data":"images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]\n"}
+,{"stream_name":"stdout","time":95.122723052,"data":"trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]\n"}
+,{"stream_name":"stderr","time":95.859300437,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":177.63130012,"data":"[f1 e1/10] loss=0.611 tracc=0.638 val_bal=0.6388 val_acc=0.7409\n"}
+,{"stream_name":"stdout","time":225.958663732,"data":"[f1 e2/10] loss=0.576 tracc=0.689 val_bal=0.6182 val_acc=0.7421\n"}
+,{"stream_name":"stdout","time":276.904662656,"data":"[f1 e3/10] loss=0.573 tracc=0.700 val_bal=0.6694 val_acc=0.7717\n"}
+,{"stream_name":"stdout","time":326.88735403,"data":"[f1 e4/10] loss=0.585 tracc=0.711 val_bal=0.5659 val_acc=0.7693\n"}
+,{"stream_name":"stdout","time":377.720517569,"data":"[f1 e5/10] loss=0.564 tracc=0.731 val_bal=0.6716 val_acc=0.7785\n"}
+,{"stream_name":"stdout","time":428.025212014,"data":"[f1 e6/10] loss=0.532 tracc=0.765 val_bal=0.7181 val_acc=0.7970\n"}
+,{"stream_name":"stdout","time":478.536567976,"data":"[f1 e7/10] loss=0.516 tracc=0.789 val_bal=0.7398 val_acc=0.8094\n"}
+,{"stream_name":"stdout","time":528.916341232,"data":"[f1 e8/10] loss=0.469 tracc=0.825 val_bal=0.7473 val_acc=0.8057\n"}
+,{"stream_name":"stdout","time":579.210753171,"data":"[f1 e9/10] loss=0.448 tracc=0.840 val_bal=0.7638 val_acc=0.8125\n"}
+,{"stream_name":"stdout","time":629.482714583,"data":"[f1 e10/10] loss=0.438 tracc=0.853 val_bal=0.7626 val_acc=0.8088\n"}
+,{"stream_name":"stdout","time":658.237453418,"data":"[fold 1] TEST bal=0.6612 acc=0.8138 f1=0.6491 aucM=0.9279 melR=0.514 | PH2 auc=0.8895\n"}
+,{"stream_name":"stdout","time":712.575606477,"data":"[f2 e1/10] loss=0.613 tracc=0.651 val_bal=0.5166 val_acc=0.7389\n"}
+,{"stream_name":"stdout","time":762.826802325,"data":"[f2 e2/10] loss=0.586 tracc=0.695 val_bal=0.4545 val_acc=0.7508\n"}
+,{"stream_name":"stdout","time":813.342032845,"data":"[f2 e3/10] loss=0.565 tracc=0.723 val_bal=0.6126 val_acc=0.7845\n"}
+,{"stream_name":"stdout","time":863.657826151,"data":"[f2 e4/10] loss=0.573 tracc=0.719 val_bal=0.5690 val_acc=0.7795\n"}
+,{"stream_name":"stdout","time":913.909412432,"data":"[f2 e5/10] loss=0.565 tracc=0.733 val_bal=0.6507 val_acc=0.7945\n"}
+,{"stream_name":"stdout","time":964.218442143,"data":"[f2 e6/10] loss=0.529 tracc=0.767 val_bal=0.6775 val_acc=0.8089\n"}
+,{"stream_name":"stdout","time":1014.541624443,"data":"[f2 e7/10] loss=0.493 tracc=0.802 val_bal=0.6828 val_acc=0.8120\n"}
+,{"stream_name":"stdout","time":1064.921486598,"data":"[f2 e8/10] loss=0.462 tracc=0.827 val_bal=0.7081 val_acc=0.8214\n"}
+,{"stream_name":"stdout","time":1115.34747401,"data":"[f2 e9/10] loss=0.447 tracc=0.845 val_bal=0.6993 val_acc=0.8276\n"}
+,{"stream_name":"stdout","time":1165.898883351,"data":"[f2 e10/10] loss=0.437 tracc=0.855 val_bal=0.7047 val_acc=0.8257\n"}
+,{"stream_name":"stdout","time":1183.520388836,"data":"[fold 2] TEST bal=0.6712 acc=0.8237 f1=0.6781 aucM=0.9316 melR=0.581 | PH2 auc=0.8620\n"}
+,{"stream_name":"stdout","time":1248.733113501,"data":"[f3 e1/10] loss=0.625 tracc=0.593 val_bal=0.5559 val_acc=0.7342\n"}
+,{"stream_name":"stdout","time":1300.121130411,"data":"[f3 e2/10] loss=0.593 tracc=0.695 val_bal=0.5607 val_acc=0.7486\n"}
+,{"stream_name":"stdout","time":1350.235256359,"data":"[f3 e3/10] loss=0.583 tracc=0.703 val_bal=0.6174 val_acc=0.7799\n"}
+,{"stream_name":"stdout","time":1400.827343722,"data":"[f3 e4/10] loss=0.558 tracc=0.733 val_bal=0.5992 val_acc=0.7548\n"}
+,{"stream_name":"stdout","time":1451.137073948,"data":"[f3 e5/10] loss=0.546 tracc=0.748 val_bal=0.6564 val_acc=0.7899\n"}
+,{"stream_name":"stdout","time":1501.547370247,"data":"[f3 e6/10] loss=0.540 tracc=0.763 val_bal=0.6683 val_acc=0.7974\n"}
+,{"stream_name":"stdout","time":1552.047781131,"data":"[f3 e7/10] loss=0.504 tracc=0.783 val_bal=0.6701 val_acc=0.8030\n"}
+,{"stream_name":"stdout","time":1602.592846411,"data":"[f3 e8/10] loss=0.470 tracc=0.831 val_bal=0.6892 val_acc=0.8018\n"}
+,{"stream_name":"stdout","time":1653.019916724,"data":"[f3 e9/10] loss=0.436 tracc=0.855 val_bal=0.6885 val_acc=0.8018\n"}
+,{"stream_name":"stdout","time":1703.417695764,"data":"[f3 e10/10] loss=0.428 tracc=0.859 val_bal=0.6879 val_acc=0.7992\n"}
+,{"stream_name":"stdout","time":1721.033800265,"data":"[fold 3] TEST bal=0.6882 acc=0.8297 f1=0.6741 aucM=0.9310 melR=0.550 | PH2 auc=0.9113\n"}
+,{"stream_name":"stdout","time":1789.517282544,"data":"[f4 e1/10] loss=0.603 tracc=0.599 val_bal=0.5830 val_acc=0.7827\n"}
+,{"stream_name":"stdout","time":1841.009839373,"data":"[f4 e2/10] loss=0.563 tracc=0.696 val_bal=0.6226 val_acc=0.7695\n"}
+,{"stream_name":"stdout","time":1891.217484243,"data":"[f4 e3/10] loss=0.567 tracc=0.703 val_bal=0.5780 val_acc=0.7632\n"}
+,{"stream_name":"stdout","time":1941.727854616,"data":"[f4 e4/10] loss=0.582 tracc=0.697 val_bal=0.5984 val_acc=0.7689\n"}
+,{"stream_name":"stdout","time":1992.082031529,"data":"[f4 e5/10] loss=0.533 tracc=0.753 val_bal=0.6527 val_acc=0.8010\n"}
+,{"stream_name":"stdout","time":2042.567410414,"data":"[f4 e6/10] loss=0.519 tracc=0.767 val_bal=0.6464 val_acc=0.8161\n"}
+,{"stream_name":"stdout","time":2092.875692127,"data":"[f4 e7/10] loss=0.494 tracc=0.792 val_bal=0.6978 val_acc=0.8149\n"}
+,{"stream_name":"stdout","time":2143.293848588,"data":"[f4 e8/10] loss=0.458 tracc=0.831 val_bal=0.7199 val_acc=0.8262\n"}
+,{"stream_name":"stdout","time":2193.855303998,"data":"[f4 e9/10] loss=0.430 tracc=0.841 val_bal=0.7289 val_acc=0.8243\n"}
+,{"stream_name":"stdout","time":2244.270778872,"data":"[f4 e10/10] loss=0.421 tracc=0.857 val_bal=0.7232 val_acc=0.8268\n"}
+,{"stream_name":"stdout","time":2261.799813921,"data":"[fold 4] TEST bal=0.6712 acc=0.8267 f1=0.6747 aucM=0.9289 melR=0.586 | PH2 auc=0.8973\n"}
+,{"stream_name":"stdout","time":2330.269978301,"data":"[f5 e1/10] loss=0.602 tracc=0.667 val_bal=0.5898 val_acc=0.7852\n"}
+,{"stream_name":"stdout","time":2381.910512378,"data":"[f5 e2/10] loss=0.581 tracc=0.698 val_bal=0.5399 val_acc=0.7644\n"}
+,{"stream_name":"stdout","time":2432.153200247,"data":"[f5 e3/10] loss=0.563 tracc=0.741 val_bal=0.6437 val_acc=0.8103\n"}
+,{"stream_name":"stdout","time":2482.988661266,"data":"[f5 e4/10] loss=0.558 tracc=0.753 val_bal=0.6465 val_acc=0.8084\n"}
+,{"stream_name":"stdout","time":2533.567197264,"data":"[f5 e5/10] loss=0.541 tracc=0.768 val_bal=0.6929 val_acc=0.8185\n"}
+,{"stream_name":"stdout","time":2584.312569788,"data":"[f5 e6/10] loss=0.510 tracc=0.802 val_bal=0.6703 val_acc=0.8185\n"}
+,{"stream_name":"stdout","time":2634.830395749,"data":"[f5 e7/10] loss=0.466 tracc=0.825 val_bal=0.6924 val_acc=0.8310\n"}
+,{"stream_name":"stdout","time":2685.412089822,"data":"[f5 e8/10] loss=0.424 tracc=0.868 val_bal=0.7093 val_acc=0.8379\n"}
+,{"stream_name":"stdout","time":2736.029950466,"data":"[f5 e9/10] loss=0.390 tracc=0.889 val_bal=0.7411 val_acc=0.8436\n"}
+,{"stream_name":"stdout","time":2786.66326729,"data":"[f5 e10/10] loss=0.385 tracc=0.887 val_bal=0.7453 val_acc=0.8455\n"}
+,{"stream_name":"stdout","time":2804.336832887,"data":"[fold 5] TEST bal=0.6879 acc=0.8376 f1=0.6801 aucM=0.9352 melR=0.671 | PH2 auc=0.8870\n"}
+,{"stream_name":"stdout","time":2804.784011453,"data":"[DONE main] bal 0.6759±0.0118 acc 0.8263 f1 0.6712 aucM 0.9309 melR 0.580 | ens bal 0.6959 | PH2 0.8894 | 46.7 min\n"}
+,{"stream_name":"stderr","time":2812.570030689,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2812.570066547,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2812.87884137,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2812.878869423,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2813.603272411,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2815.196767616,"data":"[NbConvertApp] Writing 415112 bytes to __results__.html\n"}
+]

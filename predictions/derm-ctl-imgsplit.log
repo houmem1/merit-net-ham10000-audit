@@ -1,0 +1,44 @@
+device: cuda NVIDIA GeForce RTX 4070 Laptop GPU
+config: {'size': 256, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'plain', 'backbone': 'convnext_tiny', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'ce', 'loss': 'ce', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 1.0, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'ctl-imgsplit', 'task': 'multi', 'split_file': 'split_imagelevel.json', 'image_level_control': True, 'seed': 42}
+cache files: ['ham_256.npy', 'ham_320.npy', 'ham_384.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_320.npy', 'ph2_384.npy', 'ph2_labels.csv']
+cache utilise: ham_256.npy ph2_256.npy
+images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]
+trainval 8012 / test 2003 | test counts [65, 103, 220, 23, 223, 1341, 28]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+kernel_local_ctl-imgsplit:478: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f1 e1/10] loss=1.108 tracc=0.698 val_bal=0.4450 val_acc=0.7810
+[f1 e2/10] loss=0.939 tracc=0.771 val_bal=0.5994 val_acc=0.8322
+[f1 e3/10] loss=0.871 tracc=0.801 val_bal=0.6771 val_acc=0.8472
+[f1 e4/10] loss=0.807 tracc=0.831 val_bal=0.7122 val_acc=0.8646
+[f1 e5/10] loss=0.753 tracc=0.858 val_bal=0.7567 val_acc=0.8827
+[f1 e6/10] loss=0.695 tracc=0.887 val_bal=0.7828 val_acc=0.8896
+[f1 e7/10] loss=0.633 tracc=0.915 val_bal=0.7990 val_acc=0.8921
+[f1 e8/10] loss=0.574 tracc=0.942 val_bal=0.8182 val_acc=0.8971
+[f1 e9/10] loss=0.535 tracc=0.965 val_bal=0.8240 val_acc=0.9021
+[f1 e10/10] loss=0.521 tracc=0.972 val_bal=0.8183 val_acc=0.9033
+[fold 1] TEST bal=0.8394 acc=0.9051 f1=0.8540 aucM=0.9865 melR=0.717 | PH2 auc=0.8914
+kernel_local_ctl-imgsplit:478: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f2 e1/10] loss=1.124 tracc=0.698 val_bal=0.4505 val_acc=0.7973
+[f2 e2/10] loss=0.939 tracc=0.771 val_bal=0.5750 val_acc=0.8366
+[f2 e3/10] loss=0.879 tracc=0.797 val_bal=0.6842 val_acc=0.8584
+[f2 e4/10] loss=0.792 tracc=0.839 val_bal=0.7232 val_acc=0.8684
+[f2 e5/10] loss=0.747 tracc=0.864 val_bal=0.7367 val_acc=0.8784
+[f2 e6/10] loss=0.692 tracc=0.888 val_bal=0.7583 val_acc=0.8840
+[f2 e7/10] loss=0.625 tracc=0.917 val_bal=0.7863 val_acc=0.8983
+[f2 e8/10] loss=0.568 tracc=0.949 val_bal=0.7860 val_acc=0.9008
+[f2 e9/10] loss=0.529 tracc=0.968 val_bal=0.8007 val_acc=0.9027
+[f2 e10/10] loss=0.517 tracc=0.975 val_bal=0.8017 val_acc=0.9046
+[fold 2] TEST bal=0.8232 acc=0.9041 f1=0.8486 aucM=0.9876 melR=0.709 | PH2 auc=0.9062
+kernel_local_ctl-imgsplit:478: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f3 e1/10] loss=1.143 tracc=0.696 val_bal=0.4974 val_acc=0.7940
+[f3 e2/10] loss=0.921 tracc=0.780 val_bal=0.6337 val_acc=0.8396
+[f3 e3/10] loss=0.841 tracc=0.817 val_bal=0.6670 val_acc=0.8471
+[f3 e4/10] loss=0.796 tracc=0.838 val_bal=0.6669 val_acc=0.8546
+[f3 e5/10] loss=0.722 tracc=0.874 val_bal=0.7388 val_acc=0.8702
+[f3 e6/10] loss=0.671 tracc=0.900 val_bal=0.7425 val_acc=0.8789
+[f3 e7/10] loss=0.613 tracc=0.924 val_bal=0.7586 val_acc=0.8864
+[f3 e8/10] loss=0.558 tracc=0.951 val_bal=0.7642 val_acc=0.8858
+[f3 e9/10] loss=0.526 tracc=0.968 val_bal=0.7784 val_acc=0.8914
+[f3 e10/10] loss=0.515 tracc=0.975 val_bal=0.7791 val_acc=0.8914
+[fold 3] TEST bal=0.8485 acc=0.9036 f1=0.8584 aucM=0.9879 melR=0.717 | PH2 auc=0.8702
+[DONE ctl-imgsplit] bal 0.8370�0.0128 acc 0.9043 f1 0.8536 aucM 0.9873 melR 0.714 | ens bal 0.8484 | PH2 0.8893 | 24.5 min

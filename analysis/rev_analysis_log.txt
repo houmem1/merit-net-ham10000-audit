@@ -1,0 +1,127 @@
+loaded: 31 | new: ['m-edl-lam01']
+3f main         bal 68.9 [64.1,73.9] acc 82.9 melR 55.4 PH2 0.911
+3f merit-ce     bal 74.7 [70.4,79.4] acc 87.9 melR 64.0 PH2 0.946
+3f cnx-cbedl    bal 72.3 [67.9,77.4] acc 85.2 melR 61.7 PH2 0.880
+3f cnx-ce       bal 72.1 [67.0,77.0] acc 87.7 melR 64.4 PH2 0.945
+3f swinv2t-ce   bal 74.4 [69.0,79.5] acc 87.9 melR 64.9 PH2 0.947
+3f deit3s-ce    bal 70.0 [64.9,75.3] acc 86.2 melR 61.7 PH2 0.915
+3f effb3-ce     bal 66.6 [61.4,71.6] acc 85.6 melR 57.7 PH2 0.852
+3f dense121-ce  bal 68.0 [63.4,73.3] acc 85.6 melR 62.6 PH2 0.960
+3f r50-ce       bal 58.7 [54.2,63.4] acc 83.8 melR 51.4 PH2 0.908
+3f cnx-wce      bal 76.5 [72.3,80.9] acc 74.3 melR 76.1 PH2 0.801
+3f cnx-focal    bal 73.6 [68.7,78.2] acc 88.0 melR 62.6 PH2 0.881
+3f cnx-cbce     bal 77.2 [73.0,81.6] acc 86.6 melR 67.6 PH2 0.903
+3f cnx-edl      bal 68.0 [63.7,72.9] acc 86.4 melR 65.3 PH2 0.950
+3f m-gap        bal 72.0 [67.4,77.0] acc 83.7 melR 57.2 PH2 0.924
+3f m-attplain   bal 72.0 [67.1,77.4] acc 83.7 melR 60.4 PH2 0.930
+3f m-single     bal 70.3 [65.6,75.5] acc 84.5 melR 60.4 PH2 0.915
+3f m-fusemean   bal 70.5 [65.6,75.6] acc 83.6 melR 59.5 PH2 0.935
+3f m-lam0       bal 72.0 [67.3,77.0] acc 85.5 melR 63.5 PH2 0.889
+3f m-lam01      bal 73.6 [68.3,78.8] acc 85.7 melR 64.4 PH2 0.936
+3f m-beta9999   bal 69.2 [64.4,74.1] acc 76.3 melR 59.0 PH2 0.713
+3f m-edl        bal 65.6 [61.8,69.4] acc 86.1 melR 66.2 PH2 0.960
+3f m-effb3      bal 74.3 [69.8,79.1] acc 86.5 melR 60.8 PH2 0.907
+3f m-224        bal 68.8 [63.1,74.3] acc 82.7 melR 56.8 PH2 0.904
+5f main         bal 69.6 [64.7,74.6] acc 83.7 [81.6,85.8]
+5f merit-ce     bal 74.2 [69.9,78.8] acc 87.5 [85.7,89.4]
+5f cnx-cbedl    bal 72.3 [67.5,77.5] acc 85.0 [83.0,87.1]
+5f cnx-ce       bal 72.8 [68.4,77.8] acc 88.1 [86.3,89.9]
+Attention effect under CE: MSAP+CE - ConvNeXt-T+CE         nf5 dBal +1.4 [-1.0,+3.6] dAcc -0.5 A-only 26 B-only 37 p 0.21 holm 0.21
+Attention effect under CB-EDL: MERIT-Net - ConvNeXt-T+CB-EDL nf5 dBal -2.7 [-5.4,-0.5] dAcc -1.3 A-only 23 B-only 49 p 0.0029 holm 0.0059
+Objective effect, MSAP encoder: CB-EDL - CE                nf5 dBal -4.6 [-7.7,-1.5] dAcc -3.8 A-only 39 B-only 116 p 4.5e-10 holm 3.2e-09
+Objective effect, plain encoder: CB-EDL - CE               nf5 dBal -0.6 [-2.8,+2.3] dAcc -3.1 A-only 33 B-only 95 p 3.8e-08 holm 2.3e-07
+KL ceiling: lambda=0.1 - lambda=1 (MERIT)                  nf3 dBal +4.7 [+2.5,+7.2] dAcc +2.8 A-only 83 B-only 27 p 8.3e-08 holm 4.2e-07
+KL ceiling: lambda=0 - lambda=1 (MERIT)                    nf3 dBal +3.1 [+0.4,+6.3] dAcc +2.5 A-only 76 B-only 25 p 3.7e-07 holm 1.5e-06
+Remaining gap: MERIT lambda=0.1 - MSAP+CE                  nf3 dBal -1.1 [-5.0,+2.5] dAcc -2.2 A-only 38 B-only 82 p 7.3e-05 holm 0.00022
+merit-ce - ResNet-50                                       nf3 dBal +16.1 [+11.2,+21.3] dAcc +4.1 A-only 141 B-only 59 p 6.3e-09 holm 2e-07
+cnx-ce - ResNet-50                                         nf3 dBal +13.4 [+9.0,+18.3] dAcc +3.9 A-only 142 B-only 64 p 5.7e-08 holm 1.6e-06
+swinv2t-ce - ResNet-50                                     nf3 dBal +15.8 [+10.7,+21.1] dAcc +4.1 A-only 143 B-only 61 p 9e-09 holm 2.6e-07
+deit3s-ce - ResNet-50                                      nf3 dBal +11.4 [+6.7,+16.6] dAcc +2.4 A-only 122 B-only 73 p 0.00055 holm 0.012
+effb3-ce - ResNet-50                                       nf3 dBal +7.9 [+3.5,+12.9] dAcc +1.7 A-only 110 B-only 75 p 0.012 holm 0.16
+dense121-ce - ResNet-50                                    nf3 dBal +9.3 [+4.7,+14.6] dAcc +1.7 A-only 108 B-only 73 p 0.011 holm 0.16
+swinv2t-ce - ConvNeXt-T+CE                                 nf3 dBal +2.4 [+0.1,+4.9] dAcc +0.2 A-only 52 B-only 48 p 0.76 holm 1
+deit3s-ce - ConvNeXt-T+CE                                  nf3 dBal -2.0 [-4.7,+0.8] dAcc -1.4 A-only 43 B-only 72 p 0.0087 holm 0.14
+effb3-ce - ConvNeXt-T+CE                                   nf3 dBal -5.4 [-8.6,-2.7] dAcc -2.1 A-only 58 B-only 101 p 0.00081 holm 0.015
+dense121-ce - ConvNeXt-T+CE                                nf3 dBal -4.0 [-7.5,-0.3] dAcc -2.1 A-only 61 B-only 104 p 0.001 holm 0.018
+r50-ce - ConvNeXt-T+CE                                     nf3 dBal -13.4 [-18.3,-9.0] dAcc -3.9 A-only 64 B-only 142 p 5.7e-08 holm 1.6e-06
+merit-ce - ConvNeXt-T+CE                                   nf3 dBal +2.7 [-0.3,+6.2] dAcc +0.2 A-only 40 B-only 36 p 0.73 holm 1
+cnx-wce - ConvNeXt-T+CE (objective)                        nf3 dBal +4.4 [+0.7,+8.8] dAcc -13.4 A-only 65 B-only 335 p 6.4e-45 holm 2.3e-43
+cnx-focal - ConvNeXt-T+CE (objective)                      nf3 dBal +1.6 [-0.1,+3.4] dAcc +0.3 A-only 26 B-only 19 p 0.37 holm 1
+cnx-cbce - ConvNeXt-T+CE (objective)                       nf3 dBal +5.1 [+1.5,+9.4] dAcc -1.1 A-only 42 B-only 64 p 0.041 holm 0.45
+cnx-edl - ConvNeXt-T+CE (objective)                        nf3 dBal -4.0 [-7.8,-0.1] dAcc -1.3 A-only 35 B-only 61 p 0.01 holm 0.16
+cnx-cbedl - ConvNeXt-T+CE (objective)                      nf3 dBal +0.3 [-2.8,+4.2] dAcc -2.5 A-only 44 B-only 94 p 2.5e-05 holm 0.00055
+m-gap - MERIT-Net (ablation)                               nf3 dBal +3.1 [+0.4,+5.9] dAcc +0.8 A-only 54 B-only 38 p 0.12 holm 1
+m-attplain - MERIT-Net (ablation)                          nf3 dBal +3.1 [+0.1,+6.7] dAcc +0.8 A-only 56 B-only 40 p 0.13 holm 1
+m-single - MERIT-Net (ablation)                            nf3 dBal +1.5 [-0.3,+3.3] dAcc +1.6 A-only 61 B-only 29 p 0.00097 holm 0.018
+m-fusemean - MERIT-Net (ablation)                          nf3 dBal +1.6 [-0.9,+4.2] dAcc +0.7 A-only 45 B-only 31 p 0.14 holm 1
+m-beta9999 - MERIT-Net (ablation)                          nf3 dBal +0.4 [-3.0,+4.2] dAcc -6.6 A-only 37 B-only 170 p 1.4e-21 holm 5e-20
+m-edl - MERIT-Net (ablation)                               nf3 dBal -3.2 [-7.4,+0.7] dAcc +3.2 A-only 119 B-only 54 p 8.6e-07 holm 2.2e-05
+m-effb3 - MERIT-Net (ablation)                             nf3 dBal +5.5 [+2.0,+9.0] dAcc +3.6 A-only 152 B-only 80 p 2.6e-06 holm 6.6e-05
+m-224 - MERIT-Net (ablation)                               nf3 dBal -0.1 [-2.3,+2.2] dAcc -0.2 A-only 43 B-only 48 p 0.68 holm 1
+MERIT-Net - ConvNeXt-T+CB-CE                               nf3 dBal -8.3 [-11.9,-4.8] dAcc -3.7 A-only 46 B-only 120 p 8.4e-09 holm 2.5e-07
+MERIT-Net - ConvNeXt-T+weighted CE                         nf3 dBal -7.6 [-11.2,-4.3] dAcc +8.6 A-only 274 B-only 100 p 7.7e-20 holm 2.6e-18
+MERIT-Net - ConvNeXt-T+CE                                  nf3 dBal -3.2 [-5.9,-0.3] dAcc -4.8 A-only 44 B-only 140 p 7.3e-13 holm 2.3e-11
+MERIT-Net - ResNet-50                                      nf3 dBal +10.2 [+5.9,+15.2] dAcc -0.9 A-only 107 B-only 125 p 0.26 holm 1
+MERIT-Net - MSAP+CE (3 folds)                              nf3 dBal -5.8 [-9.5,-2.6] dAcc -5.0 A-only 44 B-only 144 p 1.3e-13 holm 4.4e-12
+MSAP+CE - ConvNeXt-T+CE (3 folds)                          nf3 dBal +2.7 [-0.3,+6.2] dAcc +0.2 A-only 40 B-only 36 p 0.73 holm 1
+MERIT-Net - ConvNeXt-T+CB-EDL (3 folds)                    nf3 dBal -3.5 [-6.4,-1.0] dAcc -2.3 A-only 29 B-only 75 p 7.4e-06 holm 0.00018
+MERIT lambda=0 - MSAP+CE                                   nf3 dBal -2.7 [-5.8,+0.4] dAcc -2.4 A-only 38 B-only 87 p 1.4e-05 holm 0.00032
+MERIT lambda=0.1 - ConvNeXt-T+CE                           nf3 dBal +1.6 [-1.1,+4.6] dAcc -2.0 A-only 45 B-only 85 p 0.00057 holm 0.012
+Unweighted EDL: lambda=0.1 - lambda=1 (MERIT)              nf3 dBal +6.1 [+2.2,+9.8] dAcc +0.9 A-only 53 B-only 34 p 0.053 holm 0.53
+Class weights at lambda=0.1: CB-EDL - EDL (MERIT)          nf3 dBal +1.9 [-0.9,+5.3] dAcc -1.4 A-only 42 B-only 70 p 0.01 holm 0.16
+interaction (CB gain of lam0.1) - (UW gain): {'est': -0.013874642382091351, 'ci': [-0.05270183555159971, 0.023688224226157864]}
+cal main@5: raw ECE 0.406 NLL 1.047 AURCc 0.0431 | T ECE 0.084 NLL 0.616 AURCc 0.0426 T=0.28 | prior ECE 0.014 NLL 0.505 AURCc 0.0436 acc 83.8 c=6.14e-06 | AURC_u 0.0470
+cal cnx-cbedl@5: raw ECE 0.397 NLL 0.993 AURCc 0.0382 | T ECE 0.087 NLL 0.577 AURCc 0.0372 T=0.31 | prior ECE 0.011 NLL 0.470 AURCc 0.0379 acc 84.7 c=6.14e-06 | AURC_u 0.0413
+cal merit-ce@5: raw ECE 0.057 NLL 0.398 AURCc 0.0279 | T ECE 0.036 NLL 0.371 AURCc 0.0277 T=0.84
+cal cnx-ce@5: raw ECE 0.058 NLL 0.397 AURCc 0.0288 | T ECE 0.037 NLL 0.373 AURCc 0.0289 T=0.85
+cal cnx-edl@3: raw ECE 0.261 NLL 0.717 AURCc 0.0312 | T ECE 0.024 NLL 0.488 AURCc 0.0308 T=0.52 | prior ECE 0.020 NLL 0.454 AURCc 0.0386 acc 86.3 c=0.0541 | AURC_u 0.0321
+cal m-lam01@3: raw ECE 0.267 NLL 0.727 AURCc 0.0350 | T ECE 0.031 NLL 0.490 AURCc 0.0348 T=0.54 | prior ECE 0.022 NLL 0.448 AURCc 0.0378 acc 85.7 c=0.00711 | AURC_u 0.0416
+cal m-lam0@3: raw ECE 0.233 NLL 0.647 AURCc 0.0339 | T ECE 0.031 NLL 0.442 AURCc 0.0338 T=0.55 | prior ECE 0.039 NLL 0.436 AURCc 0.0341 acc 85.4 c=6.14e-06 | AURC_u 0.1671
+cal m-edl@3: raw ECE 0.281 NLL 0.745 AURCc 0.0306 | T ECE 0.031 NLL 0.488 AURCc 0.0305 T=0.50 | prior ECE 0.024 NLL 0.448 AURCc 0.0451 acc 86.0 c=0.0375 | AURC_u 0.0317
+cal main@3: raw ECE 0.401 NLL 1.063 AURCc 0.0470 | T ECE 0.087 NLL 0.644 AURCc 0.0459 T=0.28 | prior ECE 0.023 NLL 0.531 AURCc 0.0474 acc 83.1 c=6.14e-06 | AURC_u 0.0506
+cal merit-ce@3: raw ECE 0.065 NLL 0.405 AURCc 0.0289 | T ECE 0.038 NLL 0.380 AURCc 0.0284 T=0.84
+AURC paired: {"main_Tconf_minus_meritce_conf": {"est": 0.014740020294748087, "ci": [0.006881257619905092, 0.021903500557904073]}, "main_u_minus_meritce_conf": {"est": 0.01909531171651673, "ci": [0.010663664911917656, 0.02670610508150207]}, "main_u_minus_main_conf": {"est": 0.0038422367848554226, "ci": [0.0026872945661796156, 0.005118916810909832]}}
+ref 95% merit_u      kept 1913 acc 85.4 mel: referred 18 TP 121 FN 83 / 222
+ref 95% merit_conf   kept 1913 acc 85.7 mel: referred 21 TP 120 FN 81 / 222
+ref 95% msapce_conf  kept 1913 acc 90.1 mel: referred 16 TP 138 FN 68 / 222
+ref 95% cnxce_conf   kept 1913 acc 90.2 mel: referred 16 TP 139 FN 67 / 222
+ref 90% merit_u      kept 1812 acc 86.9 mel: referred 46 TP 107 FN 69 / 222
+ref 90% merit_conf   kept 1812 acc 87.7 mel: referred 39 TP 110 FN 73 / 222
+ref 90% msapce_conf  kept 1812 acc 92.2 mel: referred 43 TP 127 FN 52 / 222
+ref 90% cnxce_conf   kept 1812 acc 92.0 mel: referred 44 TP 121 FN 57 / 222
+ref 80% merit_u      kept 1611 acc 89.6 mel: referred 91 TP 80 FN 51 / 222
+ref 80% merit_conf   kept 1611 acc 90.6 mel: referred 88 TP 82 FN 52 / 222
+ref 80% msapce_conf  kept 1611 acc 95.2 mel: referred 91 TP 100 FN 31 / 222
+ref 80% cnxce_conf   kept 1611 acc 95.5 mel: referred 86 TP 102 FN 34 / 222
+ref 70% merit_u      kept 1410 acc 92.0 mel: referred 151 TP 41 FN 30 / 222
+ref 70% merit_conf   kept 1410 acc 93.0 mel: referred 145 TP 43 FN 34 / 222
+ref 70% msapce_conf  kept 1410 acc 97.5 mel: referred 132 TP 73 FN 17 / 222
+ref 70% cnxce_conf   kept 1410 acc 97.9 mel: referred 137 TP 69 FN 16 / 222
+ref 50% merit_u      kept 1007 acc 98.0 mel: referred 218 TP 0 FN 4 / 222
+ref 50% merit_conf   kept 1007 acc 98.2 mel: referred 216 TP 0 FN 6 / 222
+ref 50% msapce_conf  kept 1007 acc 99.2 mel: referred 189 TP 31 FN 2 / 222
+ref 50% cnxce_conf   kept 1007 acc 99.3 mel: referred 190 TP 30 FN 2 / 222
+ref diff80: {"mel_fn_kept": {"est": 20, "ci": [9.0, 35.0]}, "acc_kept": {"est": -0.05586592178770944, "ci": [-0.07085796655802319, -0.04475781729000616]}}
+val-locked: {"merit_u_90": {"tau": 0.9174500107765198, "n_kept": 1878, "coverage": 0.9324726911618669, "acc_kept": 0.8604898828541001, "bal_kept": 0.7150331589106038, "errors_kept": 262, "mel_total": 222, "mel_referred": 28, "mel_kept_tp": 118, "mel_kept_fn": 76, "classes_present_kept": 7, "val_target_coverage": 0.9}, "msapce_conf_90": {"tau": 0.37631999807387584, "n_kept": 1755, "coverage": 0.8714001986097318, "acc_kept": 0.931054131054131, "bal_kept": 0.8004290887121931, "errors_kept": 121, "mel_total": 222, "mel_referred": 52, "mel_kept_tp": 122, "mel_kept_fn": 48, "classes_present_kept": 7, "val_target_coverage": 0.9}, "merit_u_80": {"tau": 0.8868700265884399, "n_kept": 1673, "coverage": 0.8306852035749752, "acc_kept": 0.8894202032277346, "bal_kept": 0.7383441097745409, "errors_kept": 185, "mel_total": 222, "mel_referred": 75, "mel_kept_tp": 91, "mel_kept_fn": 56, "classes_present_kept": 7, "val_target_coverage": 0.8}, "msapce_conf_80": {"tau": 0.22072778771031643, "n_kept": 1518, "coverage": 0.7537239324726912, "acc_kept": 0.9650856389986825, "bal_kept": 0.8822025245199521, "errors_kept": 53, "mel_total": 222, "mel_referred": 111, "mel_kept_tp": 87, "mel_kept_fn": 24, "classes_present_kept": 7, "val_target_coverage": 0.8}}
+melnv EfficientNetV2-S 384 (single family)         AUC 0.9776 [0.968,0.986] Youden thr 0.0880 TP 206 FN 16 TN 1215 FP 148 sens 92.8 [89.2,96.3] spec 89.1 [86.9,91.3] acc 89.7 [87.7,91.6] | PH2 AUC 0.926 sens 36/40 spec 114/160
+melnv EffV2-S 320 + 384 (equal weights)            AUC 0.9771 [0.967,0.986] Youden thr 0.0740 TP 208 FN 14 TN 1198 FP 165 sens 93.7 [89.6,97.2] spec 87.9 [85.5,90.2] acc 88.7 [86.5,90.7] | PH2 AUC 0.929 sens 37/40 spec 105/160
+melnv EffV2-S 384 + 320 + MSAP-CE (equal weights)  AUC 0.9756 [0.965,0.985] Youden thr 0.1203 TP 202 FN 20 TN 1219 FP 144 sens 91.0 [86.6,95.1] spec 89.4 [87.2,91.6] acc 89.7 [87.5,91.7] | PH2 AUC 0.937 sens 36/40 spec 132/160
+melnv Weighted fusion (7 systems)                  AUC 0.9748 [0.964,0.985] Youden thr 0.1302 TP 200 FN 22 TN 1229 FP 134 sens 90.1 [85.1,94.5] spec 90.2 [87.9,92.2] acc 90.2 [88.2,92.1] | PH2 AUC 0.947 sens 36/40 spec 132/160
+melnv MERIT-Net (CB-EDL, matched budget)           AUC 0.9358 [0.915,0.954] Youden thr 0.4061 TP 187 FN 35 TN 1149 FP 214 sens 84.2 [77.2,90.3] spec 84.3 [81.7,86.8] acc 84.3 [82.0,86.6] | PH2 AUC 0.950 sens 32/40 spec 149/160
+melnv MSAP encoder + CE (matched budget)           AUC 0.9629 [0.947,0.977] Youden thr 0.0538 TP 214 FN 8 TN 1064 FP 299 sens 96.4 [93.1,99.1] spec 78.1 [75.1,81.0] acc 80.6 [78.1,83.3] | PH2 AUC 0.956 sens 37/40 spec 124/160
+melnv ConvNeXt-T + CE (matched budget)             AUC 0.9626 [0.946,0.977] Youden thr 0.0723 TP 205 FN 17 TN 1149 FP 214 sens 92.3 [87.9,96.3] spec 84.3 [81.7,86.6] acc 85.4 [83.2,87.6] | PH2 AUC 0.958 sens 37/40 spec 135/160
+melnv MERIT ConvNeXt-S 384 (boost5)                AUC 0.9648 [0.950,0.978] Youden thr 0.1185 TP 202 FN 20 TN 1184 FP 179 sens 91.0 [86.1,95.4] spec 86.9 [84.4,89.3] acc 87.4 [85.3,89.7] | PH2 AUC 0.963 sens 37/40 spec 126/160
+fusion weights: {'boost': np.float64(0.2891), 'boost2': np.float64(0.2318), 'boost3': np.float64(0.1507), 'boost4': np.float64(0.2253), 'boost5': np.float64(0.1001), 'merit-ce': np.float64(0.001), 'cnx-ce': np.float64(0.0021)}
+malignant AUC: {"boost4": {"auc": 0.9678476695718075, "auc_ci": [0.958210514110315, 0.9761983325180164]}, "screen1": {"auc": 0.9516309839585702, "auc_ci": [0.9355335242730085, 0.9658780694641999]}, "screen2": {"auc": 0.9327949349501072, "auc_ci": [0.9166295270171482, 0.9477911889484896]}, "boost2": {"auc": 0.9617121384362763, "auc_ci": [0.9489285254977229, 0.9729101769665746]}, "merit-ce": {"auc": 0.9518693949728433, "auc_ci": [0.9353900006196417, 0.9655298022669717]}, "main": {"auc": 0.9211538461538462, "auc_ci": [0.9027357027110667, 0.9383996274339159]}}
+boost boost    bal 74.1 [69.9,79.3] acc 88.4 [86.7,90.2] AUC 0.975 PH2 0.938 [0.877,0.981]
+boost boost2   bal 77.6 [72.8,82.1] acc 90.0 [88.3,91.6] AUC 0.982 PH2 0.883 [0.817,0.938]
+boost boost3   bal 70.3 [65.3,74.8] acc 87.1 [85.2,88.9] AUC 0.974 PH2 0.942 [0.894,0.981]
+boost boost4   bal 79.2 [74.0,84.1] acc 90.4 [88.7,92.0] AUC 0.984 PH2 0.899 [0.841,0.947]
+boost boost5   bal 72.3 [67.5,77.3] acc 88.2 [86.3,89.9] AUC 0.975 PH2 0.944 [0.904,0.974]
+boost screen1  bal 82.8 [79.7,85.7] acc 90.6 [88.9,92.2] AUC 0.952 PH2 0.885 [0.828,0.934]
+boost screen2  bal 81.2 [78.2,84.4] acc 88.7 [86.9,90.4] AUC 0.933 PH2 0.905 [0.841,0.956]
+PH2 diffs: {"m-edl - main": {"est": 0.04875000000000007, "ci": [0.017105181277056274, 0.08824083430840679]}, "dense121-ce - main": {"est": 0.04890625000000004, "ci": [0.007961016964065626, 0.09543669138444101]}, "merit-ce - main": {"est": 0.03515625000000011, "ci": [-0.0007136032695829933, 0.07774357208255274]}, "m-edl - merit-ce": {"est": 0.01359374999999996, "ci": [-0.008127848734313284, 0.03671318507794941]}, "m-beta9999 - main": {"est": -0.19843749999999993, "ci": [-0.2876220408857154, -0.11168628246753251]}}
+dup sensitivity: excluded 5 ['nv', 'nv', 'bkl', 'nv', 'nv'] max |dBal| 0.035 pt, max |dAcc| 0.064 pt
+image-level control: {"n_test": 2003, "n_exposed": 781, "frac_exposed": 0.38991512730903644, "n_test_lesions": 1888, "grouped_ref": {"bal_acc": 0.7205334993284185, "bal_acc_ci": [0.6699555564248467, 0.7696129296677091], "acc": 0.8768619662363456, "acc_ci": [0.8577818709227839, 0.8946847153236156], "fold_bal_mean": 0.714251710607016, "fold_bal_sd": 0.00909905745301485, "n_trainval": 8001}, "leaky": {"nf": 3, "n_trainval": 8012, "fold_bal_mean": 0.8370454421886501, "fold_bal_sd": 0.012803438956769468, "all": {"n": 2003, "bal_acc": 0.8483514759538483, "acc": 0.9116325511732402, "bal_acc_ci": [0.8156131149264172, 0.8799375391628362], "acc_ci": [0.8979987243621811, 0.9240834072322397], "mel_recall": 0.7174887892376681, "per_class_n": [65, 103, 220, 23, 223, 1341, 28]}, "exposed": {"n": 781, "bal_acc": 0.8486580779705154, "acc": 0.8668373879641486, "bal_acc_ci": [0.7993007461565549, 0.8967032550270435], "acc_ci": [0.8413332103321034, 0.8904282115869018], "mel_recall": 0.7088607594936709, "per_class_n": [32, 62, 109, 11, 158, 397, 12]}, "unexposed": {"n": 1222, "bal_acc": 0.844902013685602, "acc": 0.9402618657937807, "bal_acc_ci": [0.793929372112991, 0.8948042281281388], "acc_ci": [0.9264101028925295, 0.9531538369624613], "mel_recall": 0.7384615384615385, "per_class_n": [33, 41, 111, 12, 65, 944, 16]}}, "clean": {"nf": 3, "n_trainval": 7024, "fold_bal_mean": 0.7593881302718494, "fold_bal_sd": 0.019207551958499883, "all": {"n": 2003, "bal_acc": 0.7678587493789272, "acc": 0.8776834747878183, "bal_acc_ci": [0.7281730597396597, 0.805807402186398], "acc_ci": [0.8629090610871164, 0.8920996113762887], "mel_recall": 0.6188340807174888, "per_class_n": [65, 103, 220, 23, 223, 1341, 28]}, "exposed": {"n": 781, "bal_acc": 0.7175250492957074, "acc": 0.7964148527528809, "bal_acc_ci": [0.660307122910761, 0.7766061102567886], "acc_ci": [0.7668277537715567, 0.8255253061386768], "mel_recall": 0.6139240506329114, "per_class_n": [32, 62, 109, 11, 158, 397, 12]}, "unexposed": {"n": 1222, "bal_acc": 0.8123125830907972, "acc": 0.9296235679214403, "bal_acc_ci": [0.758824806755466, 0.8637110642063095], "acc_ci": [0.9139780582320904, 0.944683959657364], "mel_recall": 0.6307692307692307, "per_class_n": [33, 41, 111, 12, 65, 944, 16]}}, "n_dropped": 988, "leaky_minus_clean_bal": {"exposed": 0.13113302867480803, "exposed_ci": [0.0822552834363757, 0.1874743380427066], "unexposed": 0.03258943059480479, "unexposed_ci": [-0.004780888495536392, 0.07012229970592468], "did": 0.09854359808000324, "did_ci": [0.0388781594
+random image split: test images with a same-lesion training image: {'mean': 0.38621068397403896, 'sd': 0.0101738706584699, 'n': 200}
+rev_analysis.json written

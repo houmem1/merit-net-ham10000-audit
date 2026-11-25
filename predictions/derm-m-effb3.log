@@ -1,0 +1,51 @@
+[{"stream_name":"stdout","time":18.843479148,"data":"device: cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":18.843538643,"data":"config: {'size': 256, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'merit', 'backbone': 'tf_efficientnet_b3', 'scales': (2, 3, 4), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'edl', 'loss': 'cbedl', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 1.0, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'm-effb3'}\n"}
+,{"stream_name":"stdout","time":18.850318836,"data":"cache files: ['ham_256.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_labels.csv']\n"}
+,{"stream_name":"stdout","time":19.288439213,"data":"cache utilise: ham_256.npy ph2_256.npy\n"}
+,{"stream_name":"stdout","time":19.288991633,"data":"images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]\n"}
+,{"stream_name":"stdout","time":42.402886689,"data":"trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]\n"}
+,{"stream_name":"stderr","time":42.937818955,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":45.785008876,"data":"Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.\n"}
+,{"stream_name":"stdout","time":125.189952031,"data":"[f1 e1/10] loss=0.669 tracc=0.600 val_bal=0.4826 val_acc=0.7236\n"}
+,{"stream_name":"stdout","time":178.304571419,"data":"[f1 e2/10] loss=0.513 tracc=0.773 val_bal=0.7237 val_acc=0.8032\n"}
+,{"stream_name":"stdout","time":229.728023788,"data":"[f1 e3/10] loss=0.438 tracc=0.822 val_bal=0.7776 val_acc=0.8310\n"}
+,{"stream_name":"stdout","time":282.363107114,"data":"[f1 e4/10] loss=0.411 tracc=0.848 val_bal=0.7896 val_acc=0.8390\n"}
+,{"stream_name":"stdout","time":334.710760223,"data":"[f1 e5/10] loss=0.372 tracc=0.879 val_bal=0.8096 val_acc=0.8489\n"}
+,{"stream_name":"stdout","time":387.062991607,"data":"[f1 e6/10] loss=0.348 tracc=0.895 val_bal=0.7949 val_acc=0.8476\n"}
+,{"stream_name":"stdout","time":439.402898828,"data":"[f1 e7/10] loss=0.312 tracc=0.920 val_bal=0.7989 val_acc=0.8513\n"}
+,{"stream_name":"stdout","time":491.470244551,"data":"[f1 e8/10] loss=0.298 tracc=0.934 val_bal=0.8021 val_acc=0.8563\n"}
+,{"stream_name":"stdout","time":544.172154706,"data":"[f1 e9/10] loss=0.286 tracc=0.938 val_bal=0.7938 val_acc=0.8532\n"}
+,{"stream_name":"stdout","time":596.520758218,"data":"[f1 e10/10] loss=0.287 tracc=0.944 val_bal=0.7928 val_acc=0.8513\n"}
+,{"stream_name":"stdout","time":620.071234985,"data":"[fold 1] TEST bal=0.7457 acc=0.8555 f1=0.7300 aucM=0.9533 melR=0.586 | PH2 auc=0.9295\n"}
+,{"stream_name":"stderr","time":620.598872451,"data":"Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.\n"}
+,{"stream_name":"stdout","time":678.340685275,"data":"[f2 e1/10] loss=0.677 tracc=0.533 val_bal=0.3859 val_acc=0.7114\n"}
+,{"stream_name":"stdout","time":731.161870044,"data":"[f2 e2/10] loss=0.525 tracc=0.752 val_bal=0.6714 val_acc=0.8064\n"}
+,{"stream_name":"stdout","time":783.498454275,"data":"[f2 e3/10] loss=0.453 tracc=0.808 val_bal=0.7029 val_acc=0.8289\n"}
+,{"stream_name":"stdout","time":836.042670372,"data":"[f2 e4/10] loss=0.414 tracc=0.848 val_bal=0.7262 val_acc=0.8389\n"}
+,{"stream_name":"stdout","time":888.188292923,"data":"[f2 e5/10] loss=0.388 tracc=0.869 val_bal=0.7376 val_acc=0.8495\n"}
+,{"stream_name":"stdout","time":940.982366713,"data":"[f2 e6/10] loss=0.356 tracc=0.889 val_bal=0.7589 val_acc=0.8470\n"}
+,{"stream_name":"stdout","time":993.310552413,"data":"[f2 e7/10] loss=0.327 tracc=0.909 val_bal=0.7613 val_acc=0.8501\n"}
+,{"stream_name":"stdout","time":1045.847658265,"data":"[f2 e8/10] loss=0.315 tracc=0.923 val_bal=0.7651 val_acc=0.8520\n"}
+,{"stream_name":"stdout","time":1098.534582047,"data":"[f2 e9/10] loss=0.303 tracc=0.935 val_bal=0.7433 val_acc=0.8501\n"}
+,{"stream_name":"stdout","time":1151.36876798,"data":"[f2 e10/10] loss=0.294 tracc=0.935 val_bal=0.7485 val_acc=0.8520\n"}
+,{"stream_name":"stdout","time":1166.669782787,"data":"[fold 2] TEST bal=0.7104 acc=0.8496 f1=0.7186 aucM=0.9466 melR=0.599 | PH2 auc=0.8552\n"}
+,{"stream_name":"stderr","time":1167.177826146,"data":"Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.\n"}
+,{"stream_name":"stdout","time":1234.256382557,"data":"[f3 e1/10] loss=0.709 tracc=0.396 val_bal=0.4397 val_acc=0.7267\n"}
+,{"stream_name":"stdout","time":1288.371382857,"data":"[f3 e2/10] loss=0.528 tracc=0.764 val_bal=0.6796 val_acc=0.7974\n"}
+,{"stream_name":"stdout","time":1340.632535883,"data":"[f3 e3/10] loss=0.457 tracc=0.818 val_bal=0.7553 val_acc=0.8305\n"}
+,{"stream_name":"stdout","time":1393.782642865,"data":"[f3 e4/10] loss=0.414 tracc=0.850 val_bal=0.7680 val_acc=0.8374\n"}
+,{"stream_name":"stdout","time":1446.457812902,"data":"[f3 e5/10] loss=0.403 tracc=0.870 val_bal=0.7727 val_acc=0.8405\n"}
+,{"stream_name":"stdout","time":1498.898000432,"data":"[f3 e6/10] loss=0.356 tracc=0.894 val_bal=0.7719 val_acc=0.8518\n"}
+,{"stream_name":"stdout","time":1551.65845625,"data":"[f3 e7/10] loss=0.331 tracc=0.911 val_bal=0.7641 val_acc=0.8537\n"}
+,{"stream_name":"stdout","time":1604.539995706,"data":"[f3 e8/10] loss=0.310 tracc=0.924 val_bal=0.7697 val_acc=0.8549\n"}
+,{"stream_name":"stdout","time":1657.048749717,"data":"[f3 e9/10] loss=0.323 tracc=0.930 val_bal=0.7574 val_acc=0.8562\n"}
+,{"stream_name":"stdout","time":1709.796387906,"data":"[f3 e10/10] loss=0.300 tracc=0.936 val_bal=0.7603 val_acc=0.8568\n"}
+,{"stream_name":"stdout","time":1725.133359081,"data":"[fold 3] TEST bal=0.7403 acc=0.8550 f1=0.7329 aucM=0.9509 melR=0.631 | PH2 auc=0.8681\n"}
+,{"stream_name":"stdout","time":1725.380762822,"data":"[DONE m-effb3] bal 0.7321±0.0190 acc 0.8534 f1 0.7272 aucM 0.9503 melR 0.605 | ens bal 0.7433 | PH2 0.8843 | 28.7 min\n"}
+,{"stream_name":"stderr","time":1730.961098188,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1730.96112491,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1731.188135246,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1731.188164056,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1731.791645238,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1733.065243871,"data":"[NbConvertApp] Writing 423265 bytes to __results__.html\n"}
+]

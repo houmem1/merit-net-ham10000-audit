@@ -1,0 +1,54 @@
+[{"stream_name":"stdout","time":18.567858796,"data":"device: cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":18.567915253,"data":"config: {'size': 256, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'plain', 'backbone': 'resnet50', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'ce', 'loss': 'ce', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 1.0, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'r50-ce'}\n"}
+,{"stream_name":"stdout","time":18.57225821,"data":"cache files: ['ham_256.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_labels.csv']\n"}
+,{"stream_name":"stdout","time":19.003185022,"data":"cache utilise: ham_256.npy ph2_256.npy\n"}
+,{"stream_name":"stdout","time":19.00372204,"data":"images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]\n"}
+,{"stream_name":"stdout","time":48.793529274,"data":"trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]\n"}
+,{"stream_name":"stderr","time":49.338650994,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":55.235934102,"data":"/kaggle/src/script.py:442: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":55.23597169,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":92.244869114,"data":"[f1 e1/10] loss=1.265 tracc=0.658 val_bal=0.2213 val_acc=0.6848\n"}
+,{"stream_name":"stdout","time":131.395411961,"data":"[f1 e2/10] loss=1.048 tracc=0.719 val_bal=0.3564 val_acc=0.7465\n"}
+,{"stream_name":"stdout","time":174.392452512,"data":"[f1 e3/10] loss=0.950 tracc=0.766 val_bal=0.4542 val_acc=0.7711\n"}
+,{"stream_name":"stdout","time":218.65318056,"data":"[f1 e4/10] loss=0.878 tracc=0.797 val_bal=0.5359 val_acc=0.7958\n"}
+,{"stream_name":"stdout","time":262.285665908,"data":"[f1 e5/10] loss=0.826 tracc=0.825 val_bal=0.5613 val_acc=0.8044\n"}
+,{"stream_name":"stdout","time":306.183750968,"data":"[f1 e6/10] loss=0.795 tracc=0.844 val_bal=0.5867 val_acc=0.8081\n"}
+,{"stream_name":"stdout","time":350.037820581,"data":"[f1 e7/10] loss=0.761 tracc=0.851 val_bal=0.5986 val_acc=0.8069\n"}
+,{"stream_name":"stdout","time":394.319651103,"data":"[f1 e8/10] loss=0.742 tracc=0.861 val_bal=0.6104 val_acc=0.8112\n"}
+,{"stream_name":"stdout","time":438.313964829,"data":"[f1 e9/10] loss=0.731 tracc=0.869 val_bal=0.6118 val_acc=0.8106\n"}
+,{"stream_name":"stdout","time":482.084246166,"data":"[f1 e10/10] loss=0.730 tracc=0.872 val_bal=0.6187 val_acc=0.8094\n"}
+,{"stream_name":"stdout","time":497.206238108,"data":"[fold 1] TEST bal=0.5843 acc=0.8327 f1=0.6084 aucM=0.9573 melR=0.505 | PH2 auc=0.9003\n"}
+,{"stream_name":"stderr","time":498.147854752,"data":"/kaggle/src/script.py:442: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":498.147897745,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":542.041728488,"data":"[f2 e1/10] loss=1.305 tracc=0.635 val_bal=0.1991 val_acc=0.6852\n"}
+,{"stream_name":"stdout","time":586.624320485,"data":"[f2 e2/10] loss=1.050 tracc=0.722 val_bal=0.3137 val_acc=0.7439\n"}
+,{"stream_name":"stdout","time":630.455092248,"data":"[f2 e3/10] loss=0.944 tracc=0.768 val_bal=0.4377 val_acc=0.7833\n"}
+,{"stream_name":"stdout","time":674.136019582,"data":"[f2 e4/10] loss=0.875 tracc=0.802 val_bal=0.4908 val_acc=0.8070\n"}
+,{"stream_name":"stdout","time":718.093440648,"data":"[f2 e5/10] loss=0.830 tracc=0.823 val_bal=0.5008 val_acc=0.8082\n"}
+,{"stream_name":"stdout","time":762.314033722,"data":"[f2 e6/10] loss=0.801 tracc=0.832 val_bal=0.5420 val_acc=0.8207\n"}
+,{"stream_name":"stdout","time":806.560140777,"data":"[f2 e7/10] loss=0.757 tracc=0.857 val_bal=0.5509 val_acc=0.8201\n"}
+,{"stream_name":"stdout","time":850.740556239,"data":"[f2 e8/10] loss=0.747 tracc=0.866 val_bal=0.5689 val_acc=0.8282\n"}
+,{"stream_name":"stdout","time":894.939151701,"data":"[f2 e9/10] loss=0.732 tracc=0.868 val_bal=0.5616 val_acc=0.8289\n"}
+,{"stream_name":"stdout","time":939.00655639,"data":"[f2 e10/10] loss=0.725 tracc=0.872 val_bal=0.5588 val_acc=0.8270\n"}
+,{"stream_name":"stdout","time":954.104022519,"data":"[fold 2] TEST bal=0.5709 acc=0.8347 f1=0.6103 aucM=0.9542 melR=0.509 | PH2 auc=0.8709\n"}
+,{"stream_name":"stderr","time":955.046341093,"data":"/kaggle/src/script.py:442: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":955.046380739,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":998.992219191,"data":"[f3 e1/10] loss=1.332 tracc=0.619 val_bal=0.1993 val_acc=0.7029\n"}
+,{"stream_name":"stdout","time":1043.29098554,"data":"[f3 e2/10] loss=1.070 tracc=0.715 val_bal=0.3133 val_acc=0.7492\n"}
+,{"stream_name":"stdout","time":1087.360841935,"data":"[f3 e3/10] loss=0.955 tracc=0.761 val_bal=0.4991 val_acc=0.7842\n"}
+,{"stream_name":"stdout","time":1131.388357615,"data":"[f3 e4/10] loss=0.886 tracc=0.799 val_bal=0.5088 val_acc=0.7930\n"}
+,{"stream_name":"stdout","time":1175.450262549,"data":"[f3 e5/10] loss=0.840 tracc=0.816 val_bal=0.5505 val_acc=0.8061\n"}
+,{"stream_name":"stdout","time":1219.507828928,"data":"[f3 e6/10] loss=0.796 tracc=0.836 val_bal=0.5968 val_acc=0.8155\n"}
+,{"stream_name":"stdout","time":1263.497235929,"data":"[f3 e7/10] loss=0.770 tracc=0.852 val_bal=0.5892 val_acc=0.8130\n"}
+,{"stream_name":"stdout","time":1307.380732857,"data":"[f3 e8/10] loss=0.755 tracc=0.864 val_bal=0.6021 val_acc=0.8180\n"}
+,{"stream_name":"stdout","time":1351.310090884,"data":"[f3 e9/10] loss=0.744 tracc=0.869 val_bal=0.6070 val_acc=0.8168\n"}
+,{"stream_name":"stdout","time":1395.221845728,"data":"[f3 e10/10] loss=0.742 tracc=0.864 val_bal=0.6088 val_acc=0.8186\n"}
+,{"stream_name":"stdout","time":1410.279741689,"data":"[fold 3] TEST bal=0.5623 acc=0.8203 f1=0.5936 aucM=0.9579 melR=0.482 | PH2 auc=0.8637\n"}
+,{"stream_name":"stdout","time":1410.485366823,"data":"[DONE r50-ce] bal 0.5725±0.0111 acc 0.8292 f1 0.6041 aucM 0.9565 melR 0.498 | ens bal 0.5866 | PH2 0.8783 | 23.5 min\n"}
+,{"stream_name":"stderr","time":1415.835434067,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1415.835463429,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1416.053224048,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1416.053266169,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1416.658087609,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1417.912063684,"data":"[NbConvertApp] Writing 423629 bytes to __results__.html\n"}
+]

@@ -1,0 +1,48 @@
+[{"stream_name":"stdout","time":24.965183992,"data":"device: cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":24.965327983,"data":"config: {'size': 224, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'merit', 'backbone': 'convnext_tiny', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'edl', 'loss': 'cbedl', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 1.0, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'm-224'}\n"}
+,{"stream_name":"stdout","time":24.974239623,"data":"cache files: ['ham_256.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_labels.csv']\n"}
+,{"stream_name":"stdout","time":25.674404104,"data":"cache utilise: ham_256.npy ph2_256.npy\n"}
+,{"stream_name":"stdout","time":25.67505002,"data":"images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]\n"}
+,{"stream_name":"stdout","time":62.423611181,"data":"trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]\n"}
+,{"stream_name":"stdout","time":133.317210497,"data":"[f1 e1/10] loss=0.608 tracc=0.647 val_bal=0.6090 val_acc=0.7631\n"}
+,{"stream_name":"stdout","time":171.82991277,"data":"[f1 e2/10] loss=0.575 tracc=0.696 val_bal=0.5171 val_acc=0.7347\n"}
+,{"stream_name":"stdout","time":213.005832714,"data":"[f1 e3/10] loss=0.555 tracc=0.719 val_bal=0.6453 val_acc=0.7650\n"}
+,{"stream_name":"stdout","time":252.024252971,"data":"[f1 e4/10] loss=0.573 tracc=0.740 val_bal=0.5572 val_acc=0.7748\n"}
+,{"stream_name":"stdout","time":292.354696349,"data":"[f1 e5/10] loss=0.564 tracc=0.741 val_bal=0.7054 val_acc=0.7884\n"}
+,{"stream_name":"stdout","time":331.815321795,"data":"[f1 e6/10] loss=0.523 tracc=0.776 val_bal=0.7049 val_acc=0.7909\n"}
+,{"stream_name":"stdout","time":371.587445264,"data":"[f1 e7/10] loss=0.485 tracc=0.803 val_bal=0.7449 val_acc=0.7964\n"}
+,{"stream_name":"stdout","time":411.425145164,"data":"[f1 e8/10] loss=0.446 tracc=0.837 val_bal=0.7467 val_acc=0.8007\n"}
+,{"stream_name":"stdout","time":450.855084917,"data":"[f1 e9/10] loss=0.423 tracc=0.853 val_bal=0.7472 val_acc=0.7977\n"}
+,{"stream_name":"stdout","time":490.535239026,"data":"[f1 e10/10] loss=0.416 tracc=0.862 val_bal=0.7522 val_acc=0.8014\n"}
+,{"stream_name":"stdout","time":514.631899833,"data":"[fold 1] TEST bal=0.6813 acc=0.8123 f1=0.6589 aucM=0.9301 melR=0.536 | PH2 auc=0.8791\n"}
+,{"stream_name":"stderr","time":515.161982802,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":558.426859913,"data":"[f2 e1/10] loss=0.601 tracc=0.661 val_bal=0.5551 val_acc=0.7676\n"}
+,{"stream_name":"stdout","time":597.840859165,"data":"[f2 e2/10] loss=0.583 tracc=0.700 val_bal=0.5095 val_acc=0.7527\n"}
+,{"stream_name":"stdout","time":637.652715587,"data":"[f2 e3/10] loss=0.624 tracc=0.668 val_bal=0.4928 val_acc=0.7333\n"}
+,{"stream_name":"stdout","time":677.46661917,"data":"[f2 e4/10] loss=0.580 tracc=0.713 val_bal=0.5844 val_acc=0.7733\n"}
+,{"stream_name":"stdout","time":717.087640125,"data":"[f2 e5/10] loss=0.593 tracc=0.718 val_bal=0.5013 val_acc=0.7502\n"}
+,{"stream_name":"stdout","time":756.627390681,"data":"[f2 e6/10] loss=0.549 tracc=0.757 val_bal=0.5978 val_acc=0.7908\n"}
+,{"stream_name":"stdout","time":796.566570807,"data":"[f2 e7/10] loss=0.510 tracc=0.792 val_bal=0.6088 val_acc=0.7951\n"}
+,{"stream_name":"stdout","time":836.300009261,"data":"[f2 e8/10] loss=0.469 tracc=0.825 val_bal=0.6640 val_acc=0.8089\n"}
+,{"stream_name":"stdout","time":875.846083156,"data":"[f2 e9/10] loss=0.458 tracc=0.835 val_bal=0.6527 val_acc=0.8101\n"}
+,{"stream_name":"stdout","time":915.677613528,"data":"[f2 e10/10] loss=0.450 tracc=0.839 val_bal=0.6685 val_acc=0.8107\n"}
+,{"stream_name":"stdout","time":929.499913722,"data":"[fold 2] TEST bal=0.6594 acc=0.8198 f1=0.6645 aucM=0.9150 melR=0.568 | PH2 auc=0.8920\n"}
+,{"stream_name":"stdout","time":983.523184592,"data":"[f3 e1/10] loss=0.622 tracc=0.600 val_bal=0.5677 val_acc=0.7498\n"}
+,{"stream_name":"stdout","time":1024.971186659,"data":"[f3 e2/10] loss=0.575 tracc=0.699 val_bal=0.5917 val_acc=0.7605\n"}
+,{"stream_name":"stdout","time":1064.191930716,"data":"[f3 e3/10] loss=0.589 tracc=0.702 val_bal=0.5686 val_acc=0.7717\n"}
+,{"stream_name":"stdout","time":1104.11532215,"data":"[f3 e4/10] loss=0.591 tracc=0.701 val_bal=0.5304 val_acc=0.7436\n"}
+,{"stream_name":"stdout","time":1143.974275893,"data":"[f3 e5/10] loss=0.538 tracc=0.764 val_bal=0.6152 val_acc=0.7742\n"}
+,{"stream_name":"stdout","time":1183.543540941,"data":"[f3 e6/10] loss=0.551 tracc=0.760 val_bal=0.6536 val_acc=0.8018\n"}
+,{"stream_name":"stdout","time":1223.313086483,"data":"[f3 e7/10] loss=0.506 tracc=0.792 val_bal=0.6736 val_acc=0.8036\n"}
+,{"stream_name":"stdout","time":1263.279489001,"data":"[f3 e8/10] loss=0.474 tracc=0.828 val_bal=0.6807 val_acc=0.8111\n"}
+,{"stream_name":"stdout","time":1303.19419087,"data":"[f3 e9/10] loss=0.442 tracc=0.853 val_bal=0.6781 val_acc=0.8093\n"}
+,{"stream_name":"stdout","time":1342.936066267,"data":"[f3 e10/10] loss=0.437 tracc=0.859 val_bal=0.6720 val_acc=0.8080\n"}
+,{"stream_name":"stdout","time":1356.590640554,"data":"[fold 3] TEST bal=0.6755 acc=0.8193 f1=0.6652 aucM=0.9335 melR=0.581 | PH2 auc=0.9017\n"}
+,{"stream_name":"stdout","time":1356.792083969,"data":"[DONE m-224] bal 0.6721±0.0113 acc 0.8171 f1 0.6629 aucM 0.9262 melR 0.562 | ens bal 0.6879 | PH2 0.8909 | 22.6 min\n"}
+,{"stream_name":"stderr","time":1364.116143036,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1364.116169335,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1364.412187273,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1364.412211937,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1365.086731395,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1366.504024534,"data":"[NbConvertApp] Writing 423234 bytes to __results__.html\n"}
+]

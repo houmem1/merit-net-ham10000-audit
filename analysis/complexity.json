@@ -1,0 +1,53 @@
+{
+ "merit_cnx": {
+  "params_M": 28.71,
+  "ms_per_img": 1.09,
+  "peak_MiB": 361.0
+ },
+ "merit_single": {
+  "params_M": 28.21,
+  "ms_per_img": 1.05,
+  "peak_MiB": 358.0
+ },
+ "merit_effb3": {
+  "params_M": 10.6,
+  "ms_per_img": 0.95,
+  "peak_MiB": 259.0
+ },
+ "plain_cnx": {
+  "params_M": 28.02,
+  "ms_per_img": 1.04,
+  "peak_MiB": 357.0
+ },
+ "r50": {
+  "params_M": 24.03,
+  "ms_per_img": 0.87,
+  "peak_MiB": 268.0
+ },
+ "effb3": {
+  "params_M": 11.09,
+  "ms_per_img": 0.87,
+  "peak_MiB": 282.0
+ },
+ "dense121": {
+  "params_M": 7.22,
+  "ms_per_img": 0.98,
+  "peak_MiB": 165.0
+ },
+ "deit3s": {
+  "params_M": 21.8,
+  "ms_per_img": 0.61,
+  "peak_MiB": 200.0
+ },
+ "swinv2t": {
+  "params_M": 27.78,
+  "ms_per_img": 1.86,
+  "peak_MiB": 438.0
+ },
+ "_env": {
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "bs": 16,
+  "size": 256,
+  "amp": true
+ }
+}

@@ -1,0 +1,42 @@
+device: cuda NVIDIA GeForce RTX 4070 Laptop GPU
+config: {'size': 256, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'merit', 'backbone': 'convnext_tiny', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'edl', 'loss': 'edl', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 0.1, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'm-edl-lam01', 'task': 'multi', 'split_file': 'kaggle_split.json', 'seed': 42}
+cache files: ['ham_256.npy', 'ham_320.npy', 'ham_384.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_320.npy', 'ph2_384.npy', 'ph2_labels.csv']
+cache utilise: ham_256.npy ph2_256.npy
+images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]
+trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+kernel_local_m-edl-lam01:478: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f1 e1/10] loss=1.383 tracc=0.649 val_bal=0.3119 val_acc=0.7353
+[f1 e2/10] loss=1.080 tracc=0.741 val_bal=0.4488 val_acc=0.7767
+[f1 e3/10] loss=0.960 tracc=0.775 val_bal=0.4853 val_acc=0.7940
+[f1 e4/10] loss=0.889 tracc=0.802 val_bal=0.5894 val_acc=0.8143
+[f1 e5/10] loss=0.797 tracc=0.831 val_bal=0.6739 val_acc=0.8341
+[f1 e6/10] loss=0.736 tracc=0.857 val_bal=0.6991 val_acc=0.8458
+[f1 e7/10] loss=0.652 tracc=0.890 val_bal=0.7308 val_acc=0.8495
+[f1 e8/10] loss=0.587 tracc=0.914 val_bal=0.7482 val_acc=0.8519
+[f1 e9/10] loss=0.532 tracc=0.939 val_bal=0.7681 val_acc=0.8587
+[f1 e10/10] loss=0.513 tracc=0.948 val_bal=0.7692 val_acc=0.8581
+[fold 1] TEST bal=0.7308 acc=0.8719 f1=0.7540 aucM=0.9627 melR=0.653 | PH2 auc=0.9311
+[f2 e1/10] loss=1.361 tracc=0.662 val_bal=0.2942 val_acc=0.7352
+[f2 e2/10] loss=1.096 tracc=0.729 val_bal=0.4074 val_acc=0.7720
+[f2 e3/10] loss=0.951 tracc=0.771 val_bal=0.4976 val_acc=0.8114
+[f2 e4/10] loss=0.875 tracc=0.798 val_bal=0.5750 val_acc=0.8276
+[f2 e5/10] loss=0.804 tracc=0.826 val_bal=0.6545 val_acc=0.8495
+[f2 e6/10] loss=0.723 tracc=0.858 val_bal=0.6781 val_acc=0.8582
+[f2 e7/10] loss=0.647 tracc=0.886 val_bal=0.7432 val_acc=0.8745
+[f2 e8/10] loss=0.576 tracc=0.914 val_bal=0.7437 val_acc=0.8751
+[f2 e9/10] loss=0.526 tracc=0.935 val_bal=0.7523 val_acc=0.8788
+[f2 e10/10] loss=0.503 tracc=0.945 val_bal=0.7561 val_acc=0.8795
+[fold 2] TEST bal=0.7010 acc=0.8620 f1=0.7254 aucM=0.9624 melR=0.644 | PH2 auc=0.9089
+[f3 e1/10] loss=1.408 tracc=0.614 val_bal=0.2499 val_acc=0.7361
+[f3 e2/10] loss=1.105 tracc=0.718 val_bal=0.3187 val_acc=0.7661
+[f3 e3/10] loss=0.987 tracc=0.758 val_bal=0.5269 val_acc=0.8086
+[f3 e4/10] loss=0.883 tracc=0.795 val_bal=0.5654 val_acc=0.8193
+[f3 e5/10] loss=0.817 tracc=0.825 val_bal=0.5966 val_acc=0.8268
+[f3 e6/10] loss=0.741 tracc=0.850 val_bal=0.6364 val_acc=0.8386
+[f3 e7/10] loss=0.663 tracc=0.879 val_bal=0.6788 val_acc=0.8462
+[f3 e8/10] loss=0.603 tracc=0.913 val_bal=0.6912 val_acc=0.8555
+[f3 e9/10] loss=0.542 tracc=0.934 val_bal=0.7098 val_acc=0.8524
+[f3 e10/10] loss=0.531 tracc=0.941 val_bal=0.7113 val_acc=0.8530
+[fold 3] TEST bal=0.6974 acc=0.8570 f1=0.7163 aucM=0.9641 melR=0.599 | PH2 auc=0.9473
+[DONE m-edl-lam01] bal 0.7097�0.0183 acc 0.8636 f1 0.7319 aucM 0.9631 melR 0.632 | ens bal 0.7176 | PH2 0.9291 | 43.7 min

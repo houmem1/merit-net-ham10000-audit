@@ -1,0 +1,50 @@
+[{"stream_name":"stdout","time":24.427436196,"data":"device: cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":24.427653405,"data":"config: {'size': 256, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'merit', 'backbone': 'convnext_tiny', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'edl', 'loss': 'edl', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 1.0, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'm-edl'}\n"}
+,{"stream_name":"stdout","time":24.435723303,"data":"cache files: ['ham_256.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_labels.csv']\n"}
+,{"stream_name":"stdout","time":25.051576483,"data":"cache utilise: ham_256.npy ph2_256.npy\n"}
+,{"stream_name":"stdout","time":25.052163358,"data":"images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]\n"}
+,{"stream_name":"stdout","time":52.453156858,"data":"trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]\n"}
+,{"stream_name":"stderr","time":53.177425706,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":71.65040099,"data":"/kaggle/src/script.py:442: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":71.650442155,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":132.988433141,"data":"[f1 e1/10] loss=1.472 tracc=0.647 val_bal=0.2679 val_acc=0.7168\n"}
+,{"stream_name":"stdout","time":181.805372298,"data":"[f1 e2/10] loss=1.304 tracc=0.723 val_bal=0.4211 val_acc=0.7674\n"}
+,{"stream_name":"stdout","time":232.928237613,"data":"[f1 e3/10] loss=1.263 tracc=0.751 val_bal=0.5578 val_acc=0.7940\n"}
+,{"stream_name":"stdout","time":283.147407499,"data":"[f1 e4/10] loss=1.214 tracc=0.778 val_bal=0.5923 val_acc=0.8094\n"}
+,{"stream_name":"stdout","time":333.948114243,"data":"[f1 e5/10] loss=1.186 tracc=0.793 val_bal=0.6001 val_acc=0.8192\n"}
+,{"stream_name":"stdout","time":384.215431367,"data":"[f1 e6/10] loss=1.142 tracc=0.813 val_bal=0.6236 val_acc=0.8236\n"}
+,{"stream_name":"stdout","time":434.56807211,"data":"[f1 e7/10] loss=1.049 tracc=0.849 val_bal=0.6316 val_acc=0.8322\n"}
+,{"stream_name":"stdout","time":485.027885139,"data":"[f1 e8/10] loss=0.926 tracc=0.881 val_bal=0.6524 val_acc=0.8390\n"}
+,{"stream_name":"stdout","time":535.334454105,"data":"[f1 e9/10] loss=0.865 tracc=0.902 val_bal=0.6487 val_acc=0.8359\n"}
+,{"stream_name":"stdout","time":585.588340101,"data":"[f1 e10/10] loss=0.825 tracc=0.915 val_bal=0.6474 val_acc=0.8347\n"}
+,{"stream_name":"stdout","time":613.379663348,"data":"[fold 1] TEST bal=0.6574 acc=0.8545 f1=0.6484 aucM=0.9485 melR=0.653 | PH2 auc=0.9594\n"}
+,{"stream_name":"stdout","time":667.972544607,"data":"[f2 e1/10] loss=1.454 tracc=0.665 val_bal=0.3052 val_acc=0.7452\n"}
+,{"stream_name":"stdout","time":718.141445356,"data":"[f2 e2/10] loss=1.303 tracc=0.721 val_bal=0.4308 val_acc=0.7795\n"}
+,{"stream_name":"stdout","time":768.982179482,"data":"[f2 e3/10] loss=1.255 tracc=0.752 val_bal=0.4741 val_acc=0.8020\n"}
+,{"stream_name":"stdout","time":819.349804555,"data":"[f2 e4/10] loss=1.254 tracc=0.763 val_bal=0.4332 val_acc=0.7983\n"}
+,{"stream_name":"stdout","time":869.800445801,"data":"[f2 e5/10] loss=1.196 tracc=0.796 val_bal=0.5241 val_acc=0.8214\n"}
+,{"stream_name":"stdout","time":920.568045809,"data":"[f2 e6/10] loss=1.119 tracc=0.824 val_bal=0.5387 val_acc=0.8282\n"}
+,{"stream_name":"stdout","time":971.28441374,"data":"[f2 e7/10] loss=1.063 tracc=0.848 val_bal=0.5736 val_acc=0.8382\n"}
+,{"stream_name":"stdout","time":1021.838610399,"data":"[f2 e8/10] loss=0.953 tracc=0.878 val_bal=0.5820 val_acc=0.8463\n"}
+,{"stream_name":"stdout","time":1072.284108727,"data":"[f2 e9/10] loss=0.852 tracc=0.906 val_bal=0.6251 val_acc=0.8532\n"}
+,{"stream_name":"stdout","time":1122.776588548,"data":"[f2 e10/10] loss=0.836 tracc=0.915 val_bal=0.6318 val_acc=0.8532\n"}
+,{"stream_name":"stdout","time":1140.381792861,"data":"[fold 2] TEST bal=0.6393 acc=0.8471 f1=0.6547 aucM=0.9424 melR=0.658 | PH2 auc=0.9378\n"}
+,{"stream_name":"stdout","time":1205.070933288,"data":"[f3 e1/10] loss=1.494 tracc=0.622 val_bal=0.2975 val_acc=0.7542\n"}
+,{"stream_name":"stdout","time":1257.078821927,"data":"[f3 e2/10] loss=1.300 tracc=0.729 val_bal=0.3594 val_acc=0.7567\n"}
+,{"stream_name":"stdout","time":1307.129005638,"data":"[f3 e3/10] loss=1.232 tracc=0.752 val_bal=0.5194 val_acc=0.7999\n"}
+,{"stream_name":"stdout","time":1357.810751365,"data":"[f3 e4/10] loss=1.187 tracc=0.786 val_bal=0.5523 val_acc=0.8093\n"}
+,{"stream_name":"stdout","time":1408.172556618,"data":"[f3 e5/10] loss=1.162 tracc=0.802 val_bal=0.5787 val_acc=0.8199\n"}
+,{"stream_name":"stdout","time":1458.536558143,"data":"[f3 e6/10] loss=1.091 tracc=0.834 val_bal=0.5822 val_acc=0.8280\n"}
+,{"stream_name":"stdout","time":1508.927945537,"data":"[f3 e7/10] loss=0.999 tracc=0.866 val_bal=0.6106 val_acc=0.8374\n"}
+,{"stream_name":"stdout","time":1559.438444105,"data":"[f3 e8/10] loss=0.897 tracc=0.894 val_bal=0.6233 val_acc=0.8455\n"}
+,{"stream_name":"stdout","time":1609.828039281,"data":"[f3 e9/10] loss=0.844 tracc=0.914 val_bal=0.6364 val_acc=0.8462\n"}
+,{"stream_name":"stdout","time":1660.102009722,"data":"[f3 e10/10] loss=0.796 tracc=0.926 val_bal=0.6400 val_acc=0.8493\n"}
+,{"stream_name":"stdout","time":1677.677928734,"data":"[fold 3] TEST bal=0.6401 acc=0.8491 f1=0.6389 aucM=0.9492 melR=0.604 | PH2 auc=0.9628\n"}
+,{"stream_name":"stdout","time":1677.894077255,"data":"[DONE m-edl] bal 0.6456±0.0102 acc 0.8502 f1 0.6473 aucM 0.9467 melR 0.638 | ens bal 0.6562 | PH2 0.9533 | 27.9 min\n"}
+,{"stream_name":"stderr","time":1685.058839792,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1685.058865676,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1685.337406031,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1685.337432668,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1685.997293404,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1687.41720509,"data":"[NbConvertApp] Writing 423244 bytes to __results__.html\n"}
+]
