@@ -1,4 +1,4 @@
-loaded: 31 | new: ['m-edl-lam01']
+loaded: 35 | new: ['m-edl-lam01', 'cnx-cbedl-lam01', 'm-lam01-s43', 'main-s43', 'merit-ce-s43']
 3f main         bal 68.9 [64.1,73.9] acc 82.9 melR 55.4 PH2 0.911
 3f merit-ce     bal 74.7 [70.4,79.4] acc 87.9 melR 64.0 PH2 0.946
 3f cnx-cbedl    bal 72.3 [67.9,77.4] acc 85.2 melR 61.7 PH2 0.880
@@ -33,43 +33,49 @@ Objective effect, plain encoder: CB-EDL - CE               nf5 dBal -0.6 [-2.8,+
 KL ceiling: lambda=0.1 - lambda=1 (MERIT)                  nf3 dBal +4.7 [+2.5,+7.2] dAcc +2.8 A-only 83 B-only 27 p 8.3e-08 holm 4.2e-07
 KL ceiling: lambda=0 - lambda=1 (MERIT)                    nf3 dBal +3.1 [+0.4,+6.3] dAcc +2.5 A-only 76 B-only 25 p 3.7e-07 holm 1.5e-06
 Remaining gap: MERIT lambda=0.1 - MSAP+CE                  nf3 dBal -1.1 [-5.0,+2.5] dAcc -2.2 A-only 38 B-only 82 p 7.3e-05 holm 0.00022
-merit-ce - ResNet-50                                       nf3 dBal +16.1 [+11.2,+21.3] dAcc +4.1 A-only 141 B-only 59 p 6.3e-09 holm 2e-07
-cnx-ce - ResNet-50                                         nf3 dBal +13.4 [+9.0,+18.3] dAcc +3.9 A-only 142 B-only 64 p 5.7e-08 holm 1.6e-06
-swinv2t-ce - ResNet-50                                     nf3 dBal +15.8 [+10.7,+21.1] dAcc +4.1 A-only 143 B-only 61 p 9e-09 holm 2.6e-07
-deit3s-ce - ResNet-50                                      nf3 dBal +11.4 [+6.7,+16.6] dAcc +2.4 A-only 122 B-only 73 p 0.00055 holm 0.012
-effb3-ce - ResNet-50                                       nf3 dBal +7.9 [+3.5,+12.9] dAcc +1.7 A-only 110 B-only 75 p 0.012 holm 0.16
-dense121-ce - ResNet-50                                    nf3 dBal +9.3 [+4.7,+14.6] dAcc +1.7 A-only 108 B-only 73 p 0.011 holm 0.16
+merit-ce - ResNet-50                                       nf3 dBal +16.1 [+11.2,+21.3] dAcc +4.1 A-only 141 B-only 59 p 6.3e-09 holm 2.2e-07
+cnx-ce - ResNet-50                                         nf3 dBal +13.4 [+9.0,+18.3] dAcc +3.9 A-only 142 B-only 64 p 5.7e-08 holm 1.8e-06
+swinv2t-ce - ResNet-50                                     nf3 dBal +15.8 [+10.7,+21.1] dAcc +4.1 A-only 143 B-only 61 p 9e-09 holm 3e-07
+deit3s-ce - ResNet-50                                      nf3 dBal +11.4 [+6.7,+16.6] dAcc +2.4 A-only 122 B-only 73 p 0.00055 holm 0.013
+effb3-ce - ResNet-50                                       nf3 dBal +7.9 [+3.5,+12.9] dAcc +1.7 A-only 110 B-only 75 p 0.012 holm 0.17
+dense121-ce - ResNet-50                                    nf3 dBal +9.3 [+4.7,+14.6] dAcc +1.7 A-only 108 B-only 73 p 0.011 holm 0.17
 swinv2t-ce - ConvNeXt-T+CE                                 nf3 dBal +2.4 [+0.1,+4.9] dAcc +0.2 A-only 52 B-only 48 p 0.76 holm 1
-deit3s-ce - ConvNeXt-T+CE                                  nf3 dBal -2.0 [-4.7,+0.8] dAcc -1.4 A-only 43 B-only 72 p 0.0087 holm 0.14
-effb3-ce - ConvNeXt-T+CE                                   nf3 dBal -5.4 [-8.6,-2.7] dAcc -2.1 A-only 58 B-only 101 p 0.00081 holm 0.015
-dense121-ce - ConvNeXt-T+CE                                nf3 dBal -4.0 [-7.5,-0.3] dAcc -2.1 A-only 61 B-only 104 p 0.001 holm 0.018
-r50-ce - ConvNeXt-T+CE                                     nf3 dBal -13.4 [-18.3,-9.0] dAcc -3.9 A-only 64 B-only 142 p 5.7e-08 holm 1.6e-06
+deit3s-ce - ConvNeXt-T+CE                                  nf3 dBal -2.0 [-4.7,+0.8] dAcc -1.4 A-only 43 B-only 72 p 0.0087 holm 0.15
+effb3-ce - ConvNeXt-T+CE                                   nf3 dBal -5.4 [-8.6,-2.7] dAcc -2.1 A-only 58 B-only 101 p 0.00081 holm 0.017
+dense121-ce - ConvNeXt-T+CE                                nf3 dBal -4.0 [-7.5,-0.3] dAcc -2.1 A-only 61 B-only 104 p 0.001 holm 0.019
+r50-ce - ConvNeXt-T+CE                                     nf3 dBal -13.4 [-18.3,-9.0] dAcc -3.9 A-only 64 B-only 142 p 5.7e-08 holm 1.8e-06
 merit-ce - ConvNeXt-T+CE                                   nf3 dBal +2.7 [-0.3,+6.2] dAcc +0.2 A-only 40 B-only 36 p 0.73 holm 1
-cnx-wce - ConvNeXt-T+CE (objective)                        nf3 dBal +4.4 [+0.7,+8.8] dAcc -13.4 A-only 65 B-only 335 p 6.4e-45 holm 2.3e-43
+cnx-wce - ConvNeXt-T+CE (objective)                        nf3 dBal +4.4 [+0.7,+8.8] dAcc -13.4 A-only 65 B-only 335 p 6.4e-45 holm 2.6e-43
 cnx-focal - ConvNeXt-T+CE (objective)                      nf3 dBal +1.6 [-0.1,+3.4] dAcc +0.3 A-only 26 B-only 19 p 0.37 holm 1
-cnx-cbce - ConvNeXt-T+CE (objective)                       nf3 dBal +5.1 [+1.5,+9.4] dAcc -1.1 A-only 42 B-only 64 p 0.041 holm 0.45
-cnx-edl - ConvNeXt-T+CE (objective)                        nf3 dBal -4.0 [-7.8,-0.1] dAcc -1.3 A-only 35 B-only 61 p 0.01 holm 0.16
-cnx-cbedl - ConvNeXt-T+CE (objective)                      nf3 dBal +0.3 [-2.8,+4.2] dAcc -2.5 A-only 44 B-only 94 p 2.5e-05 holm 0.00055
+cnx-cbce - ConvNeXt-T+CE (objective)                       nf3 dBal +5.1 [+1.5,+9.4] dAcc -1.1 A-only 42 B-only 64 p 0.041 holm 0.49
+cnx-edl - ConvNeXt-T+CE (objective)                        nf3 dBal -4.0 [-7.8,-0.1] dAcc -1.3 A-only 35 B-only 61 p 0.01 holm 0.17
+cnx-cbedl - ConvNeXt-T+CE (objective)                      nf3 dBal +0.3 [-2.8,+4.2] dAcc -2.5 A-only 44 B-only 94 p 2.5e-05 holm 0.00063
 m-gap - MERIT-Net (ablation)                               nf3 dBal +3.1 [+0.4,+5.9] dAcc +0.8 A-only 54 B-only 38 p 0.12 holm 1
 m-attplain - MERIT-Net (ablation)                          nf3 dBal +3.1 [+0.1,+6.7] dAcc +0.8 A-only 56 B-only 40 p 0.13 holm 1
-m-single - MERIT-Net (ablation)                            nf3 dBal +1.5 [-0.3,+3.3] dAcc +1.6 A-only 61 B-only 29 p 0.00097 holm 0.018
+m-single - MERIT-Net (ablation)                            nf3 dBal +1.5 [-0.3,+3.3] dAcc +1.6 A-only 61 B-only 29 p 0.00097 holm 0.019
 m-fusemean - MERIT-Net (ablation)                          nf3 dBal +1.6 [-0.9,+4.2] dAcc +0.7 A-only 45 B-only 31 p 0.14 holm 1
-m-beta9999 - MERIT-Net (ablation)                          nf3 dBal +0.4 [-3.0,+4.2] dAcc -6.6 A-only 37 B-only 170 p 1.4e-21 holm 5e-20
-m-edl - MERIT-Net (ablation)                               nf3 dBal -3.2 [-7.4,+0.7] dAcc +3.2 A-only 119 B-only 54 p 8.6e-07 holm 2.2e-05
-m-effb3 - MERIT-Net (ablation)                             nf3 dBal +5.5 [+2.0,+9.0] dAcc +3.6 A-only 152 B-only 80 p 2.6e-06 holm 6.6e-05
+m-beta9999 - MERIT-Net (ablation)                          nf3 dBal +0.4 [-3.0,+4.2] dAcc -6.6 A-only 37 B-only 170 p 1.4e-21 holm 5.7e-20
+m-edl - MERIT-Net (ablation)                               nf3 dBal -3.2 [-7.4,+0.7] dAcc +3.2 A-only 119 B-only 54 p 8.6e-07 holm 2.6e-05
+m-effb3 - MERIT-Net (ablation)                             nf3 dBal +5.5 [+2.0,+9.0] dAcc +3.6 A-only 152 B-only 80 p 2.6e-06 holm 7.4e-05
 m-224 - MERIT-Net (ablation)                               nf3 dBal -0.1 [-2.3,+2.2] dAcc -0.2 A-only 43 B-only 48 p 0.68 holm 1
-MERIT-Net - ConvNeXt-T+CB-CE                               nf3 dBal -8.3 [-11.9,-4.8] dAcc -3.7 A-only 46 B-only 120 p 8.4e-09 holm 2.5e-07
-MERIT-Net - ConvNeXt-T+weighted CE                         nf3 dBal -7.6 [-11.2,-4.3] dAcc +8.6 A-only 274 B-only 100 p 7.7e-20 holm 2.6e-18
-MERIT-Net - ConvNeXt-T+CE                                  nf3 dBal -3.2 [-5.9,-0.3] dAcc -4.8 A-only 44 B-only 140 p 7.3e-13 holm 2.3e-11
+MERIT-Net - ConvNeXt-T+CB-CE                               nf3 dBal -8.3 [-11.9,-4.8] dAcc -3.7 A-only 46 B-only 120 p 8.4e-09 holm 2.8e-07
+MERIT-Net - ConvNeXt-T+weighted CE                         nf3 dBal -7.6 [-11.2,-4.3] dAcc +8.6 A-only 274 B-only 100 p 7.7e-20 holm 3e-18
+MERIT-Net - ConvNeXt-T+CE                                  nf3 dBal -3.2 [-5.9,-0.3] dAcc -4.8 A-only 44 B-only 140 p 7.3e-13 holm 2.7e-11
 MERIT-Net - ResNet-50                                      nf3 dBal +10.2 [+5.9,+15.2] dAcc -0.9 A-only 107 B-only 125 p 0.26 holm 1
-MERIT-Net - MSAP+CE (3 folds)                              nf3 dBal -5.8 [-9.5,-2.6] dAcc -5.0 A-only 44 B-only 144 p 1.3e-13 holm 4.4e-12
+MERIT-Net - MSAP+CE (3 folds)                              nf3 dBal -5.8 [-9.5,-2.6] dAcc -5.0 A-only 44 B-only 144 p 1.3e-13 holm 5.1e-12
 MSAP+CE - ConvNeXt-T+CE (3 folds)                          nf3 dBal +2.7 [-0.3,+6.2] dAcc +0.2 A-only 40 B-only 36 p 0.73 holm 1
-MERIT-Net - ConvNeXt-T+CB-EDL (3 folds)                    nf3 dBal -3.5 [-6.4,-1.0] dAcc -2.3 A-only 29 B-only 75 p 7.4e-06 holm 0.00018
-MERIT lambda=0 - MSAP+CE                                   nf3 dBal -2.7 [-5.8,+0.4] dAcc -2.4 A-only 38 B-only 87 p 1.4e-05 holm 0.00032
-MERIT lambda=0.1 - ConvNeXt-T+CE                           nf3 dBal +1.6 [-1.1,+4.6] dAcc -2.0 A-only 45 B-only 85 p 0.00057 holm 0.012
-Unweighted EDL: lambda=0.1 - lambda=1 (MERIT)              nf3 dBal +6.1 [+2.2,+9.8] dAcc +0.9 A-only 53 B-only 34 p 0.053 holm 0.53
-Class weights at lambda=0.1: CB-EDL - EDL (MERIT)          nf3 dBal +1.9 [-0.9,+5.3] dAcc -1.4 A-only 42 B-only 70 p 0.01 holm 0.16
+MERIT-Net - ConvNeXt-T+CB-EDL (3 folds)                    nf3 dBal -3.5 [-6.4,-1.0] dAcc -2.3 A-only 29 B-only 75 p 7.4e-06 holm 0.0002
+MERIT lambda=0 - MSAP+CE                                   nf3 dBal -2.7 [-5.8,+0.4] dAcc -2.4 A-only 38 B-only 87 p 1.4e-05 holm 0.00036
+MERIT lambda=0.1 - ConvNeXt-T+CE                           nf3 dBal +1.6 [-1.1,+4.6] dAcc -2.0 A-only 45 B-only 85 p 0.00057 holm 0.013
+ConvNeXt-T CB-EDL: lambda=0.1 - lambda=1                   nf3 dBal +1.2 [-2.3,+4.7] dAcc +0.4 A-only 47 B-only 38 p 0.39 holm 1
+ConvNeXt-T CB-EDL lambda=0.1 - ConvNeXt-T+CE               nf3 dBal +1.5 [-1.4,+5.0] dAcc -2.0 A-only 40 B-only 81 p 0.00024 holm 0.0059
+Unweighted EDL: lambda=0.1 - lambda=1 (MERIT)              nf3 dBal +6.1 [+2.2,+9.8] dAcc +0.9 A-only 53 B-only 34 p 0.053 holm 0.58
+Class weights at lambda=0.1: CB-EDL - EDL (MERIT)          nf3 dBal +1.9 [-0.9,+5.3] dAcc -1.4 A-only 42 B-only 70 p 0.01 holm 0.17
+Seed 43: lambda=0.1 - lambda=1 (MERIT)                     nf3 dBal +0.0 [-3.3,+2.5] dAcc +1.4 A-only 64 B-only 35 p 0.0046 holm 0.084
+Seed 43: MERIT lambda=0.1 - MSAP+CE                        nf3 dBal -2.5 [-5.2,-0.0] dAcc -2.8 A-only 39 B-only 95 p 1.4e-06 holm 4.2e-05
+Seed 43: MERIT-Net - MSAP+CE                               nf3 dBal -2.6 [-5.9,+1.4] dAcc -4.2 A-only 48 B-only 133 p 2e-10 holm 7.1e-09
 interaction (CB gain of lam0.1) - (UW gain): {'est': -0.013874642382091351, 'ci': [-0.05270183555159971, 0.023688224226157864]}
+seed replication: {"seed_diff": {"main": {"bal": {"est": 0.018606102537677915, "ci": [-0.0065506139551507305, 0.04763332005488942]}, "acc": {"est": 0.006454816285997977, "ci": [-0.0010015147972460337, 0.014595748184687066]}}, "m-lam01": {"bal": {"est": -0.02842071079665165, "ci": [-0.057905753650183134, -0.006360904786627553]}, "acc": {"est": -0.006951340615690138, "ci": [-0.015585917465577836, 0.001502404436216855]}}, "merit-ce": {"bal": {"est": -0.014100712347616784, "ci": [-0.050705062454177295, 0.018706489284078517]}, "acc": {"est": -0.0009930486593843213, "ci": [-0.010284666336823612, 0.007960397217101749]}}}, "pooled": {"kl01": {"a": "m-lam01", "b": "main", "bal": {"est": 0.023922773837243227, "ci": [0.004884546209663533, 0.04034405536118288]}, "acc": {"est": 0.021102284011916606, "ci": [0.012036688263689739, 0.030265132566283104]}}, "obj": {"a": "main", "b": "merit-ce", "bal": {"est": -0.04213696882360729, "ci": [-0.07011656468332259, -0.010538869461557396]}, "acc": {"est": -0.04592850049652436, "ci": [-0.05927055409452247, -0.03280673790679138]}}, "gap01": {"a": "m-lam01", "b": "merit-ce", "bal": {"est": -0.018214194986364063, "ci": [-0.045498361801245404, 0.005766605230027179]}, "acc": {"est": -0.024826216484607755, "ci": [-0.03537852548243442, -0.014306331150507837]}}}}
 cal main@5: raw ECE 0.406 NLL 1.047 AURCc 0.0431 | T ECE 0.084 NLL 0.616 AURCc 0.0426 T=0.28 | prior ECE 0.014 NLL 0.505 AURCc 0.0436 acc 83.8 c=6.14e-06 | AURC_u 0.0470
 cal cnx-cbedl@5: raw ECE 0.397 NLL 0.993 AURCc 0.0382 | T ECE 0.087 NLL 0.577 AURCc 0.0372 T=0.31 | prior ECE 0.011 NLL 0.470 AURCc 0.0379 acc 84.7 c=6.14e-06 | AURC_u 0.0413
 cal merit-ce@5: raw ECE 0.057 NLL 0.398 AURCc 0.0279 | T ECE 0.036 NLL 0.371 AURCc 0.0277 T=0.84

@@ -11,6 +11,9 @@ the article
 Every number, table and figure of the article is generated from the files in
 this repository by `code/rev_analysis.py` and `code/rev_make_assets.py`.
 
+* Repository: https://github.com/houmem1/merit-net-ham10000-audit
+* Archived release (v1.0.0): https://doi.org/10.5281/zenodo.24540671
+
 ## Contents
 
 | Folder | Content |

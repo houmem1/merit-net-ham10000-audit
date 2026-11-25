@@ -1,0 +1,44 @@
+device: cuda NVIDIA GeForce RTX 4070 Laptop GPU
+config: {'size': 256, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'plain', 'backbone': 'convnext_tiny', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'edl', 'loss': 'cbedl', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 0.1, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'cnx-cbedl-lam01', 'task': 'multi', 'split_file': 'kaggle_split.json', 'seed': 42}
+cache files: ['ham_256.npy', 'ham_320.npy', 'ham_384.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_320.npy', 'ph2_384.npy', 'ph2_labels.csv']
+cache utilise: ham_256.npy ph2_256.npy
+images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]
+trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+kernel_local_cnx-cbedl-lam01:479: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f1 e1/10] loss=0.536 tracc=0.674 val_bal=0.4273 val_acc=0.6952
+[f1 e2/10] loss=0.462 tracc=0.696 val_bal=0.6200 val_acc=0.7582
+[f1 e3/10] loss=0.434 tracc=0.722 val_bal=0.6832 val_acc=0.7397
+[f1 e4/10] loss=0.395 tracc=0.766 val_bal=0.7447 val_acc=0.7927
+[f1 e5/10] loss=0.360 tracc=0.792 val_bal=0.7787 val_acc=0.8057
+[f1 e6/10] loss=0.343 tracc=0.820 val_bal=0.7331 val_acc=0.8051
+[f1 e7/10] loss=0.297 tracc=0.853 val_bal=0.7721 val_acc=0.8285
+[f1 e8/10] loss=0.257 tracc=0.893 val_bal=0.7923 val_acc=0.8390
+[f1 e9/10] loss=0.236 tracc=0.915 val_bal=0.8073 val_acc=0.8433
+[f1 e10/10] loss=0.230 tracc=0.927 val_bal=0.8009 val_acc=0.8464
+[fold 1] TEST bal=0.7290 acc=0.8481 f1=0.7178 aucM=0.9580 melR=0.635 | PH2 auc=0.9045
+kernel_local_cnx-cbedl-lam01:479: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f2 e1/10] loss=0.516 tracc=0.694 val_bal=0.5524 val_acc=0.7789
+[f2 e2/10] loss=0.481 tracc=0.676 val_bal=0.4904 val_acc=0.7370
+[f2 e3/10] loss=0.435 tracc=0.732 val_bal=0.7223 val_acc=0.8007
+[f2 e4/10] loss=0.408 tracc=0.755 val_bal=0.7335 val_acc=0.8120
+[f2 e5/10] loss=0.369 tracc=0.789 val_bal=0.7257 val_acc=0.8301
+[f2 e6/10] loss=0.341 tracc=0.819 val_bal=0.7864 val_acc=0.8432
+[f2 e7/10] loss=0.303 tracc=0.851 val_bal=0.7946 val_acc=0.8576
+[f2 e8/10] loss=0.277 tracc=0.880 val_bal=0.7922 val_acc=0.8613
+[f2 e9/10] loss=0.261 tracc=0.899 val_bal=0.7892 val_acc=0.8657
+[f2 e10/10] loss=0.249 tracc=0.912 val_bal=0.7879 val_acc=0.8676
+[fold 2] TEST bal=0.7319 acc=0.8505 f1=0.7270 aucM=0.9549 melR=0.680 | PH2 auc=0.9116
+kernel_local_cnx-cbedl-lam01:479: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f3 e1/10] loss=0.531 tracc=0.675 val_bal=0.5392 val_acc=0.7292
+[f3 e2/10] loss=0.450 tracc=0.718 val_bal=0.5983 val_acc=0.7761
+[f3 e3/10] loss=0.443 tracc=0.731 val_bal=0.6636 val_acc=0.7824
+[f3 e4/10] loss=0.412 tracc=0.748 val_bal=0.6849 val_acc=0.7836
+[f3 e5/10] loss=0.394 tracc=0.787 val_bal=0.7484 val_acc=0.7986
+[f3 e6/10] loss=0.401 tracc=0.763 val_bal=0.7353 val_acc=0.7849
+[f3 e7/10] loss=0.311 tracc=0.845 val_bal=0.7523 val_acc=0.8168
+[f3 e8/10] loss=0.291 tracc=0.876 val_bal=0.7671 val_acc=0.8280
+[f3 e9/10] loss=0.277 tracc=0.892 val_bal=0.7510 val_acc=0.8274
+[f3 e10/10] loss=0.269 tracc=0.905 val_bal=0.7528 val_acc=0.8299
+[fold 3] TEST bal=0.7208 acc=0.8456 f1=0.7065 aucM=0.9416 melR=0.640 | PH2 auc=0.9119
+[DONE cnx-cbedl-lam01] bal 0.7272�0.0058 acc 0.8481 f1 0.7171 aucM 0.9515 melR 0.652 | ens bal 0.7356 | PH2 0.9093 | 28.1 min

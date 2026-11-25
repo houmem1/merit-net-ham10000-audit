@@ -293,6 +293,18 @@ if CT:
 if "interaction_weights_kl" in R:
     iw = R["interaction_weights_kl"]
     put("klw.inter", sg(iw["est"])); put("klw.interci", sgci(iw["ci"]))
+if "seed_replication" in R:
+    sr = R["seed_replication"]
+    for t, d in sr["seed_diff"].items():
+        for f in ("bal", "acc"):
+            put(f"seed.{t}.d{f}", sg(d[f]["est"]))
+            put(f"seed.{t}.d{f}ci", sgci(d[f]["ci"]))
+    put("seed.maxabs", f"{max(abs(100 * d['bal']['est']) for d in sr['seed_diff'].values()):.1f}")
+    for cid, d in sr["pooled"].items():
+        for f in ("bal", "acc"):
+            put(f"pool.{cid}.d{f}", sg(d[f]["est"]))
+            put(f"pool.{cid}.d{f}ci", sgci(d[f]["ci"]))
+            put(f"pool.{cid}.d{f}abs", f"{abs(100 * d[f]['est']):.1f}")
 
 REPO = os.path.join(REV, "repo.json")
 if os.path.exists(REPO):

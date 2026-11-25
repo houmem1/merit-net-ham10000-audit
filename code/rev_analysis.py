@@ -295,6 +295,35 @@ if "m-edl-lam01" in D:
     print("interaction (CB gain of lam0.1) - (UW gain):",
           OUT["interaction_weights_kl"])
 
+# seed replication (descriptive, outside the Holm families): same
+# configuration at seed 43 minus seed 42, and two-seed pooled contrasts
+if all(t in D for t in ("main-s43", "m-lam01-s43", "merit-ce-s43")):
+    PS = {t: ens_p(t, 3).argmax(1) for t in (
+        "main", "m-lam01", "merit-ce", "main-s43", "m-lam01-s43",
+        "merit-ce-s43")}
+    def _d(fn):
+        return dict(est=float(fn(np.arange(N))), ci=boot_stat(fn))
+    def _bal(t):
+        return lambda i: bal_acc(y[i], PS[t][i])
+    def _acc(t):
+        return lambda i: float((PS[t][i] == y[i]).mean())
+    SR = {"seed_diff": {}, "pooled": {}}
+    for t in ("main", "m-lam01", "merit-ce"):
+        SR["seed_diff"][t] = dict(
+            bal=_d(lambda i, t=t: _bal(t + "-s43")(i) - _bal(t)(i)),
+            acc=_d(lambda i, t=t: _acc(t + "-s43")(i) - _acc(t)(i)))
+    for cid, a, b in (("kl01", "m-lam01", "main"),
+                      ("obj", "main", "merit-ce"),
+                      ("gap01", "m-lam01", "merit-ce")):
+        def pb(i, a=a, b=b, f=_bal):
+            return 0.5 * ((f(a)(i) - f(b)(i))
+                          + (f(a + "-s43")(i) - f(b + "-s43")(i)))
+        def pa(i, a=a, b=b):
+            return pb(i, a, b, _acc)
+        SR["pooled"][cid] = dict(a=a, b=b, bal=_d(pb), acc=_d(pa))
+    OUT["seed_replication"] = SR
+    print("seed replication:", json.dumps(SR))
+
 # margins over ResNet-50 (3-fold ensembles and fold means)
 OUT["margins_vs_r50"] = {
     t: dict(ens=S3[t]["bal_acc"] - S3["r50-ce"]["bal_acc"],

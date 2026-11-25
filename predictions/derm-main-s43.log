@@ -1,0 +1,41 @@
+device: cuda NVIDIA GeForce RTX 4070 Laptop GPU
+config: {'size': 256, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'merit', 'backbone': 'convnext_tiny', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'edl', 'loss': 'cbedl', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 1.0, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'main-s43', 'task': 'multi', 'split_file': 'kaggle_split.json', 'seed': 43}
+cache files: ['ham_256.npy', 'ham_320.npy', 'ham_384.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_320.npy', 'ph2_384.npy', 'ph2_labels.csv']
+cache utilise: ham_256.npy ph2_256.npy
+images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]
+trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[f1 e1/10] loss=0.614 tracc=0.640 val_bal=0.5407 val_acc=0.7347
+[f1 e2/10] loss=0.574 tracc=0.698 val_bal=0.5070 val_acc=0.7273
+[f1 e3/10] loss=0.569 tracc=0.713 val_bal=0.6733 val_acc=0.7736
+[f1 e4/10] loss=0.566 tracc=0.723 val_bal=0.6652 val_acc=0.7742
+[f1 e5/10] loss=0.547 tracc=0.732 val_bal=0.6659 val_acc=0.7822
+[f1 e6/10] loss=0.527 tracc=0.769 val_bal=0.7092 val_acc=0.8057
+[f1 e7/10] loss=0.480 tracc=0.811 val_bal=0.7243 val_acc=0.8032
+[f1 e8/10] loss=0.439 tracc=0.843 val_bal=0.7426 val_acc=0.8100
+[f1 e9/10] loss=0.410 tracc=0.860 val_bal=0.7701 val_acc=0.8211
+[f1 e10/10] loss=0.402 tracc=0.872 val_bal=0.7655 val_acc=0.8180
+[fold 1] TEST bal=0.6833 acc=0.8227 f1=0.6621 aucM=0.9345 melR=0.518 | PH2 auc=0.8638
+[f2 e1/10] loss=0.607 tracc=0.630 val_bal=0.5520 val_acc=0.7670
+[f2 e2/10] loss=0.575 tracc=0.708 val_bal=0.5433 val_acc=0.7833
+[f2 e3/10] loss=0.577 tracc=0.710 val_bal=0.5847 val_acc=0.7795
+[f2 e4/10] loss=0.588 tracc=0.713 val_bal=0.5593 val_acc=0.7864
+[f2 e5/10] loss=0.553 tracc=0.743 val_bal=0.5905 val_acc=0.7858
+[f2 e6/10] loss=0.550 tracc=0.752 val_bal=0.5531 val_acc=0.7751
+[f2 e7/10] loss=0.495 tracc=0.806 val_bal=0.6535 val_acc=0.8176
+[f2 e8/10] loss=0.461 tracc=0.835 val_bal=0.6564 val_acc=0.8239
+[f2 e9/10] loss=0.436 tracc=0.851 val_bal=0.6907 val_acc=0.8339
+[f2 e10/10] loss=0.430 tracc=0.862 val_bal=0.6888 val_acc=0.8332
+[fold 2] TEST bal=0.6709 acc=0.8322 f1=0.6734 aucM=0.9277 melR=0.545 | PH2 auc=0.8258
+[f3 e1/10] loss=0.635 tracc=0.646 val_bal=0.4843 val_acc=0.7505
+[f3 e2/10] loss=0.598 tracc=0.678 val_bal=0.4836 val_acc=0.7392
+[f3 e3/10] loss=0.629 tracc=0.662 val_bal=0.5491 val_acc=0.7405
+[f3 e4/10] loss=0.589 tracc=0.701 val_bal=0.5862 val_acc=0.7555
+[f3 e5/10] loss=0.556 tracc=0.743 val_bal=0.6422 val_acc=0.7811
+[f3 e6/10] loss=0.541 tracc=0.762 val_bal=0.6463 val_acc=0.7905
+[f3 e7/10] loss=0.514 tracc=0.783 val_bal=0.7017 val_acc=0.7999
+[f3 e8/10] loss=0.468 tracc=0.825 val_bal=0.7105 val_acc=0.8011
+[f3 e9/10] loss=0.446 tracc=0.846 val_bal=0.6989 val_acc=0.8036
+[f3 e10/10] loss=0.438 tracc=0.853 val_bal=0.7093 val_acc=0.8061
+[fold 3] TEST bal=0.6701 acc=0.8108 f1=0.6491 aucM=0.9404 melR=0.518 | PH2 auc=0.8933
+[DONE main-s43] bal 0.6748�0.0074 acc 0.8219 f1 0.6615 aucM 0.9342 melR 0.527 | ens bal 0.7073 | PH2 0.8609 | 25.1 min

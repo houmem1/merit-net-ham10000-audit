@@ -1,0 +1,44 @@
+device: cuda NVIDIA GeForce RTX 4070 Laptop GPU
+config: {'size': 256, 'folds_run': 3, 'epochs': 10, 'bs': 32, 'lr': 0.0002, 'wd': 0.01, 'arch': 'merit', 'backbone': 'convnext_tiny', 'scales': (1, 2, 3), 'pool': 'att_gated', 'scale_fuse': 'gate', 'head': 'ce', 'loss': 'ce', 'beta_eff': 0.999, 'mixup': 0.0, 'lam_max': 1.0, 't_anneal': 10, 'focal_gamma': 2.0, 'ls': 0.1, 'dim': 256, 'ema': 0.999, 'tta': True, 'pretrained': True, 'save_extras': False, 'save_ckpt': False, 'max_epsamples': 0, 'tag': 'merit-ce-s43', 'task': 'multi', 'split_file': 'kaggle_split.json', 'seed': 43}
+cache files: ['ham_256.npy', 'ham_320.npy', 'ham_384.npy', 'ham_labels.csv', 'ph2_256.npy', 'ph2_320.npy', 'ph2_384.npy', 'ph2_labels.csv']
+cache utilise: ham_256.npy ph2_256.npy
+images: 10015 | class counts: [327, 514, 1099, 115, 1113, 6705, 142]
+trainval 8001 / test 2014 | test counts [68, 100, 205, 22, 222, 1363, 34]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+kernel_local_merit-ce-s43:479: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f1 e1/10] loss=1.203 tracc=0.657 val_bal=0.4320 val_acc=0.7637
+[f1 e2/10] loss=0.976 tracc=0.758 val_bal=0.6050 val_acc=0.8112
+[f1 e3/10] loss=0.899 tracc=0.794 val_bal=0.6738 val_acc=0.8217
+[f1 e4/10] loss=0.830 tracc=0.824 val_bal=0.7372 val_acc=0.8452
+[f1 e5/10] loss=0.771 tracc=0.851 val_bal=0.7699 val_acc=0.8519
+[f1 e6/10] loss=0.717 tracc=0.874 val_bal=0.7728 val_acc=0.8606
+[f1 e7/10] loss=0.643 tracc=0.910 val_bal=0.7827 val_acc=0.8674
+[f1 e8/10] loss=0.582 tracc=0.942 val_bal=0.7970 val_acc=0.8630
+[f1 e9/10] loss=0.547 tracc=0.957 val_bal=0.7960 val_acc=0.8624
+[f1 e10/10] loss=0.536 tracc=0.964 val_bal=0.7954 val_acc=0.8593
+[fold 1] TEST bal=0.7193 acc=0.8694 f1=0.7259 aucM=0.9720 melR=0.662 | PH2 auc=0.9144
+kernel_local_merit-ce-s43:479: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f2 e1/10] loss=1.180 tracc=0.665 val_bal=0.4294 val_acc=0.7745
+[f2 e2/10] loss=0.961 tracc=0.767 val_bal=0.5239 val_acc=0.8170
+[f2 e3/10] loss=0.889 tracc=0.790 val_bal=0.6415 val_acc=0.8364
+[f2 e4/10] loss=0.840 tracc=0.817 val_bal=0.6663 val_acc=0.8463
+[f2 e5/10] loss=0.764 tracc=0.855 val_bal=0.7059 val_acc=0.8657
+[f2 e6/10] loss=0.699 tracc=0.884 val_bal=0.7230 val_acc=0.8757
+[f2 e7/10] loss=0.627 tracc=0.919 val_bal=0.7568 val_acc=0.8844
+[f2 e8/10] loss=0.577 tracc=0.942 val_bal=0.7653 val_acc=0.8851
+[f2 e9/10] loss=0.534 tracc=0.963 val_bal=0.7805 val_acc=0.8863
+[f2 e10/10] loss=0.523 tracc=0.970 val_bal=0.7882 val_acc=0.8869
+[fold 2] TEST bal=0.7112 acc=0.8679 f1=0.7305 aucM=0.9657 melR=0.644 | PH2 auc=0.9312
+kernel_local_merit-ce-s43:479: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[f3 e1/10] loss=1.185 tracc=0.670 val_bal=0.4593 val_acc=0.7849
+[f3 e2/10] loss=0.980 tracc=0.753 val_bal=0.5435 val_acc=0.7967
+[f3 e3/10] loss=0.891 tracc=0.795 val_bal=0.6290 val_acc=0.8324
+[f3 e4/10] loss=0.837 tracc=0.821 val_bal=0.6573 val_acc=0.8412
+[f3 e5/10] loss=0.775 tracc=0.849 val_bal=0.6875 val_acc=0.8487
+[f3 e6/10] loss=0.694 tracc=0.885 val_bal=0.7215 val_acc=0.8624
+[f3 e7/10] loss=0.648 tracc=0.911 val_bal=0.7037 val_acc=0.8624
+[f3 e8/10] loss=0.589 tracc=0.940 val_bal=0.7165 val_acc=0.8693
+[f3 e9/10] loss=0.558 tracc=0.955 val_bal=0.7089 val_acc=0.8630
+[f3 e10/10] loss=0.539 tracc=0.963 val_bal=0.7099 val_acc=0.8649
+[fold 3] TEST bal=0.6943 acc=0.8555 f1=0.7121 aucM=0.9590 melR=0.613 | PH2 auc=0.9380
+[DONE merit-ce-s43] bal 0.7083�0.0128 acc 0.8643 f1 0.7228 aucM 0.9656 melR 0.640 | ens bal 0.7331 | PH2 0.9279 | 25.3 min
